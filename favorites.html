@@ -1,0 +1,2172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Избранное - Art price</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=Noto+Sans:wght@400;500;600;700&family=Onest:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+    
+    <script type="module" src="/assets/scripts/main.js?v=1763733334812"></script>
+    <link rel="stylesheet" href="/assets/styles/main.css?v=1763733334812">
+</head>
+<body class="start">
+    <div class="marquee-bar">
+    <div class="marquee-bar__track">
+        <div class="marquee-bar__content">
+            <div class="marquee-bar__item">
+                <img src="/assets/images/icons/icon-line-1.svg" alt="" class="marquee-bar__icon">
+                <span class="marquee-bar__text">Красота и здоровье для всех возрастов</span>
+            </div>
+            <div class="marquee-bar__item">
+                <img src="/assets/images/icons/icon-line-2.svg" alt="" class="marquee-bar__icon">
+                <span class="marquee-bar__text">100% подлинные товары</span>
+            </div>
+            <div class="marquee-bar__item">
+                <img src="/assets/images/icons/icon-line-3.svg" alt="" class="marquee-bar__icon">
+                <span class="marquee-bar__text">Прямая доставка из Японии</span>
+            </div>
+            <div class="marquee-bar__item">
+                <img src="/assets/images/icons/icon-line-4.svg" alt="" class="marquee-bar__icon">
+                <span class="marquee-bar__text">Надежная система поддержки</span>
+            </div>
+        </div>
+        <!-- Дубликат для бесшовной анимации -->
+        <div class="marquee-bar__content" aria-hidden="true">
+            <div class="marquee-bar__item">
+                <img src="/assets/images/icons/icon-line-1.svg" alt="" class="marquee-bar__icon">
+                <span class="marquee-bar__text">Красота и здоровье для всех возрастов</span>
+            </div>
+            <div class="marquee-bar__item">
+                <img src="/assets/images/icons/icon-line-2.svg" alt="" class="marquee-bar__icon">
+                <span class="marquee-bar__text">100% подлинные товары</span>
+            </div>
+            <div class="marquee-bar__item">
+                <img src="/assets/images/icons/icon-line-3.svg" alt="" class="marquee-bar__icon">
+                <span class="marquee-bar__text">Прямая доставка из Японии</span>
+            </div>
+            <div class="marquee-bar__item">
+                <img src="/assets/images/icons/icon-line-4.svg" alt="" class="marquee-bar__icon">
+                <span class="marquee-bar__text">Надежная система поддержки</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <header class="header">
+    <div class="header__container">
+        <div class="header__catalog-dropdown" id="catalogDropdown">
+            <div class="header__catalog-dropdown-content">
+                <div class="header__catalog-left">
+                    <div class="header__catalog-categories">
+                        <a href="/catalog.html?filter=popular" class="header__catalog-category">
+                            <div class="header__catalog-category-icon"></div>
+                            <span>Популярное</span>
+                            <div class="header__catalog-category-arrow" aria-hidden="true">
+                                <i class="icon icon-vector"></i>
+                            </div>
+                        </a>
+                        <a href="/catalog.html?filter=new" class="header__catalog-category">
+                            <div class="header__catalog-category-icon"></div>
+                            <span>Новинки</span>
+                            <div class="header__catalog-category-arrow" aria-hidden="true">
+                                <i class="icon icon-vector"></i>
+                            </div>
+                        </a>
+                        <a href="/catalog.html?filter=seasonal" class="header__catalog-category">
+                            <div class="header__catalog-category-icon"></div>
+                            <span>Сезонное</span>
+                            <div class="header__catalog-category-arrow" aria-hidden="true">
+                                <i class="icon icon-vector"></i>
+                            </div>
+                        </a>
+                        <button type="button" class="header__catalog-category header__catalog-category--active" data-category="health">
+                            <div class="header__catalog-category-icon"></div>
+                            <span>Здоровье</span>
+                            <div class="header__catalog-category-arrow" aria-hidden="true">
+                                <i class="icon icon-vector"></i>
+                            </div>
+                        </button>
+                        <button type="button" class="header__catalog-category" data-category="medical">
+                            <div class="header__catalog-category-icon"></div>
+                            <span>Медицинские товары</span>
+                            <div class="header__catalog-category-arrow" aria-hidden="true">
+                                <i class="icon icon-vector"></i>
+                            </div>
+                        </button>
+                        <button type="button" class="header__catalog-category" data-category="beauty">
+                            <div class="header__catalog-category-icon"></div>
+                            <span>Красота и уход</span>
+                            <div class="header__catalog-category-arrow" aria-hidden="true">
+                                <i class="icon icon-vector"></i>
+                            </div>
+                        </button>
+                        <button type="button" class="header__catalog-category" data-category="hygiene">
+                            <div class="header__catalog-category-icon"></div>
+                            <span>Гигиена и быт</span>
+                            <div class="header__catalog-category-arrow" aria-hidden="true">
+                                <i class="icon icon-vector"></i>
+                            </div>
+                        </button>
+                        <button type="button" class="header__catalog-category" data-category="kids-moms">
+                            <div class="header__catalog-category-icon"></div>
+                            <span>Дети и мамы</span>
+                            <div class="header__catalog-category-arrow" aria-hidden="true">
+                                <i class="icon icon-vector"></i>
+                            </div>
+                        </button>
+                        <button type="button" class="header__catalog-category" data-category="sport">
+                            <div class="header__catalog-category-icon"></div>
+                            <span>Спорт и активность</span>
+                            <div class="header__catalog-category-arrow" aria-hidden="true">
+                                <i class="icon icon-vector"></i>
+                            </div>
+                        </button>
+                        <button type="button" class="header__catalog-category" data-category="food">
+                            <div class="header__catalog-category-icon"></div>
+                            <span>Продукты и напитки</span>
+                            <div class="header__catalog-category-arrow" aria-hidden="true">
+                                <i class="icon icon-vector"></i>
+                            </div>
+                        </button>
+                        <button type="button" class="header__catalog-category" data-category="home">
+                            <div class="header__catalog-category-icon"></div>
+                            <span>Дом и здоровье</span>
+                            <div class="header__catalog-category-arrow" aria-hidden="true">
+                                <i class="icon icon-vector"></i>
+                            </div>
+                        </button>
+                        <button type="button" class="header__catalog-category" data-category="tech">
+                            <div class="header__catalog-category-icon"></div>
+                            <span>Технологии и инновации</span>
+                            <div class="header__catalog-category-arrow" aria-hidden="true">
+                                <i class="icon icon-vector"></i>
+                            </div>
+                        </button>
+                        <button type="button" class="header__catalog-category" data-category="digital">
+                            <div class="header__catalog-category-icon"></div>
+                            <span>Цифровое здоровье</span>
+                            <div class="header__catalog-category-arrow" aria-hidden="true">
+                                <i class="icon icon-vector"></i>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="header__catalog-divider"></div>
+                
+                <div class="header__catalog-right">
+                    <div class="header__catalog-subcategories-wrapper">
+                    <div class="header__catalog-subcategories" data-category-content="popular" style="display: none;">
+                        <div class="header__catalog-columns">
+                            <div class="header__catalog-column">
+                                <h3 class="header__catalog-subcategory-title">Популярное</h3>
+                                <div class="header__catalog-subcategory-items">
+                                    <a href="/catalog.html?filter=popular" class="header__catalog-subcategory-item header__catalog-subcategory-item--all">
+                                        <span>Все популярные товары</span>
+                                        <div class="header__catalog-subcategory-arrow" aria-hidden="true">
+                                            <i class="icon icon-vector"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="header__catalog-subcategories" data-category-content="new" style="display: none;">
+                        <div class="header__catalog-columns">
+                            <div class="header__catalog-column">
+                                <h3 class="header__catalog-subcategory-title">Новинки</h3>
+                                <div class="header__catalog-subcategory-items">
+                                    <a href="/catalog.html?filter=new" class="header__catalog-subcategory-item header__catalog-subcategory-item--all">
+                                        <span>Все новинки</span>
+                                        <div class="header__catalog-subcategory-arrow" aria-hidden="true">
+                                            <i class="icon icon-vector"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="header__catalog-subcategories" data-category-content="seasonal" style="display: none;">
+                        <div class="header__catalog-columns">
+                            <div class="header__catalog-column">
+                                <h3 class="header__catalog-subcategory-title">Сезонное</h3>
+                                <div class="header__catalog-subcategory-items">
+                                    <a href="/catalog.html?filter=seasonal" class="header__catalog-subcategory-item header__catalog-subcategory-item--all">
+                                        <span>Все сезонные товары</span>
+                                        <div class="header__catalog-subcategory-arrow" aria-hidden="true">
+                                            <i class="icon icon-vector"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="header__catalog-subcategories" data-category-content="health">
+                        <div class="header__catalog-columns">
+                            <div class="header__catalog-column">
+                                <h3 class="header__catalog-subcategory-title">Здоровье</h3>
+                                <div class="header__catalog-subcategory-items">
+                                    <a href="/catalog.html?category=health&subcategory=vitamins" class="header__catalog-subcategory-item" data-subcategory="vitamins">
+                                        <span>Витамины и минералы</span>
+                                        <div class="header__catalog-subcategory-arrow" aria-hidden="true">
+                                            <i class="icon icon-vector"></i>
+                                        </div>
+                                    </a>
+                                    <a href="/catalog.html?category=health&subcategory=organs" class="header__catalog-subcategory-item header__catalog-subcategory-item--active" data-subcategory="organs">
+                                        <span>Поддержка органов</span>
+                                        <div class="header__catalog-subcategory-arrow" aria-hidden="true">
+                                            <i class="icon icon-vector"></i>
+                                        </div>
+                                    </a>
+                                    <a href="/catalog.html?category=health&subcategory=immunity" class="header__catalog-subcategory-item" data-subcategory="immunity">
+                                        <span>Иммунитет и энергия</span>
+                                        <div class="header__catalog-subcategory-arrow" aria-hidden="true">
+                                            <i class="icon icon-vector"></i>
+                                        </div>
+                                    </a>
+                                    <a href="/catalog.html?category=health&subcategory=beauty" class="header__catalog-subcategory-item" data-subcategory="beauty">
+                                        <span>Красота и баланс</span>
+                                        <div class="header__catalog-subcategory-arrow" aria-hidden="true">
+                                            <i class="icon icon-vector"></i>
+                                        </div>
+                                    </a>
+                                    <a href="/catalog.html?category=health" class="header__catalog-subcategory-item header__catalog-subcategory-item--all" data-subcategory="all">
+                                        <span>Все товары категории</span>
+                                        <div class="header__catalog-subcategory-arrow" aria-hidden="true">
+                                            <i class="icon icon-vector"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="header__catalog-column header__catalog-column--level3">
+                                <div class="header__catalog-subcategory-items" data-subcategory-content="organs">
+                                    <a href="/catalog.html?category=health&subcategory=heart" class="header__catalog-subcategory-item header__catalog-subcategory-item--level3">
+                                        <span>Сердце и сосуды</span>
+                                    </a>
+                                    <a href="/catalog.html?category=health&subcategory=liver" class="header__catalog-subcategory-item header__catalog-subcategory-item--level3">
+                                        <span>Печень и ЖКТ</span>
+                                    </a>
+                                    <a href="/catalog.html?category=health&subcategory=bones" class="header__catalog-subcategory-item header__catalog-subcategory-item--level3">
+                                        <span>Суставы и кости</span>
+                                    </a>
+                                    <a href="/catalog.html?category=health&subcategory=vision" class="header__catalog-subcategory-item header__catalog-subcategory-item--level3">
+                                        <span>Зрение</span>
+                                    </a>
+                                </div>
+                                
+                                <div class="header__catalog-subcategory-items" data-subcategory-content="vitamins" style="display: none;">
+                                    <a href="/catalog.html?category=health&subcategory=vitamins-d3" class="header__catalog-subcategory-item header__catalog-subcategory-item--level3">
+                                        <span>Витамин D3</span>
+                                    </a>
+                                    <a href="/catalog.html?category=health&subcategory=vitamins-b" class="header__catalog-subcategory-item header__catalog-subcategory-item--level3">
+                                        <span>Витамины группы B</span>
+                                    </a>
+                                    <a href="/catalog.html?category=health&subcategory=minerals" class="header__catalog-subcategory-item header__catalog-subcategory-item--level3">
+                                        <span>Минералы</span>
+                                    </a>
+                                </div>
+                                
+                                <div class="header__catalog-subcategory-items" data-subcategory-content="immunity" style="display: none;">
+                                    <a href="/catalog.html?category=health&subcategory=immunity-boost" class="header__catalog-subcategory-item header__catalog-subcategory-item--level3">
+                                        <span>Укрепление иммунитета</span>
+                                    </a>
+                                    <a href="/catalog.html?category=health&subcategory=energy" class="header__catalog-subcategory-item header__catalog-subcategory-item--level3">
+                                        <span>Энергия и бодрость</span>
+                                    </a>
+                                </div>
+                                
+                                <div class="header__catalog-subcategory-items" data-subcategory-content="beauty" style="display: none;">
+                                    <a href="/catalog.html?category=health&subcategory=skin-care" class="header__catalog-subcategory-item header__catalog-subcategory-item--level3">
+                                        <span>Уход за кожей</span>
+                                    </a>
+                                    <a href="/catalog.html?category=health&subcategory=hair-care" class="header__catalog-subcategory-item header__catalog-subcategory-item--level3">
+                                        <span>Уход за волосами</span>
+                                    </a>
+                                </div>
+                                
+                                <div class="header__catalog-subcategory-items" data-subcategory-content="all" style="display: none;">
+                                    <a href="/catalog.html?category=health" class="header__catalog-subcategory-item header__catalog-subcategory-item--level3">
+                                        <span>Все товары категории Здоровье</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    
+                    <div class="header__catalog-products">
+                        <a href="/product.html" class="header__catalog-product">
+                            <div class="header__catalog-product-image">
+                                <img src="/assets/images/products/product1.png" alt="Леденцы для горла с травами">
+                                <div class="header__catalog-product-badge">Бестселлер</div>
+                            </div>
+                            <div class="header__catalog-product-info">
+                                <div class="header__catalog-product-title">Леденцы для горла с травами</div>
+                                <div class="header__catalog-product-brand">Ryukakusan</div>
+                            </div>
+                        </a>
+                        
+                        <a href="/product.html" class="header__catalog-product">
+                            <div class="header__catalog-product-image">
+                                <img src="/assets/images/products/product2.png" alt="Леденцы для горла с травами">
+                                <div class="header__catalog-product-badge">Бестселлер</div>
+                            </div>
+                            <div class="header__catalog-product-info">
+                                <div class="header__catalog-product-title">Леденцы для горла с травами</div>
+                                <div class="header__catalog-product-brand">Ryukakusan</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="header__left">
+            <a href="/" class="header__logo">
+                <img src="/assets/images/icons/logo.svg" alt="Dr.Sugi" width="175" height="28">
+            </a>
+            
+            <div class="header__mobile-buttons">
+                <button type="button" class="header__search-btn--mobile" title="Поиск">
+                    <i class="icon icon-search"></i>
+                </button>
+                
+                <div class="header__catalog header__catalog--mobile" id="catalogTriggerMobile">
+                    <button type="button" class="header__catalog-btn header__catalog-btn--mobile">
+                        <i class="icon icon-menu header__catalog-btn-icon-menu"></i>
+                        <i class="icon icon-close header__catalog-btn-icon-close"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="header__actions">
+                <div class="header__catalog" id="catalogTrigger">
+                    <a href="/catalog.html" class="header__catalog-btn">
+                        <i class="icon icon-menu"></i>
+                        <span>Каталог</span>
+                    </a>
+                </div>
+                
+                <form class="header__search" action="/catalog.html" method="get">
+                    <input type="text" name="q" placeholder="Что вы ищете?" class="header__search-input">
+                    <button type="submit" class="header__search-btn">
+                        <i class="icon icon-search"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="header__right">
+            <div class="header__currency" id="currencyTrigger">
+                <img src="/assets/images/icons/flag-russia.svg" alt="" width="24" height="24" class="header__currency-flag">
+                <span class="header__currency-text">RUB</span>
+                <i class="icon icon-chevron-down header__currency-icon"></i>
+                
+                <div class="header__currency-dropdown" id="currencyDropdown">
+                    <a href="#" class="header__currency-item" data-dropdown-item data-value="RUB">
+                        <img src="/assets/images/icons/flag-russia.svg" alt="RUB" width="24" height="24">
+                        <span>RUB</span>
+                    </a>
+                    <a href="#" class="header__currency-item" data-dropdown-item data-value="USD">
+                        <img src="/assets/images/icons/flag-usa.svg" alt="USD" width="24" height="24">
+                        <span>USD</span>
+                    </a>
+                    <a href="#" class="header__currency-item" data-dropdown-item data-value="EUR">
+                        <img src="/assets/images/icons/flag-europe.svg" alt="EUR" width="24" height="24">
+                        <span>EUR</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="header__divider"></div>
+            
+            <a href="/cart2.html" class="header__cart">
+                <i class="icon icon-cart"></i>
+                <span class="header__cart-count">0</span>
+            </a>
+            
+            <a href="/favorites.html" class="header__favorite">
+                <i class="icon icon-favorite"></i>
+            </a>
+            
+            <a href="/account.html" class="header__profile">
+                <i class="icon icon-profile"></i>
+            </a>
+        </div>
+    </div>
+</header>
+
+<!-- Мобильное меню каталога -->
+<div class="header__mobile-catalog-menu" id="mobileCatalogMenu">
+    <div class="header__mobile-catalog-menu-content">
+        <!-- Верхний блок с валютой и иконками -->
+        <div class="header__mobile-catalog-menu-top">
+            <div class="header__mobile-catalog-menu-currency">
+                <div class="header__mobile-catalog-menu-currency-wrapper">
+                    <div class="header__mobile-catalog-menu-currency-flag">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.66797 5.66772H22.3346V18.3344H1.66797V5.66772Z" fill="#CD4631"/>
+                            <path d="M1.66797 5.66772H22.3346V10.0011H1.66797V5.66772Z" fill="white"/>
+                            <path d="M1.66797 10.0017H22.3346V14.0017H1.66797V10.0017Z" fill="#1E50A0"/>
+                        </svg>
+                    </div>
+                    <div class="header__mobile-catalog-menu-currency-text">RUB</div>
+                    <div class="header__mobile-catalog-menu-currency-arrow">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 7L9.5 11L5 7" stroke="#374327" stroke-width="1.6" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="header__mobile-catalog-menu-actions">
+                <button type="button" class="header__mobile-catalog-menu-action" data-mobile-panel-trigger="cart" aria-expanded="false" aria-controls="mobileCatalogPanel">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.32833 4.8H20.078C21.6857 4.8 22.8465 6.28167 22.4055 7.77267L20.4758 14.306C20.1783 15.3093 19.2287 16 18.1483 16H7.464C6.3825 16 5.43167 15.3082 5.13533 14.306L2.32833 4.8ZM2.32833 4.8L1.5 2M17.25 23C17.7141 23 18.1593 22.8156 18.4874 22.4874C18.8156 22.1592 19 21.7141 19 21.25C19 20.7859 18.8156 20.3408 18.4874 20.0126C18.1593 19.6844 17.7141 19.5 17.25 19.5C16.7859 19.5 16.3408 19.6844 16.0126 20.0126C15.6844 20.3408 15.5 20.7859 15.5 21.25C15.5 21.7141 15.6844 22.1592 16.0126 22.4874C16.3408 22.8156 16.7859 23 17.25 23ZM7.91667 23C8.3808 23 8.8259 22.8156 9.1541 22.4874C9.4823 22.1592 9.6667 21.7141 9.6667 21.25C9.6667 20.7859 9.4823 20.3408 9.1541 20.0126C8.8259 19.6844 8.3808 19.5 7.91667 19.5C7.45254 19.5 7.00742 19.6844 6.67923 20.0126C6.35104 20.3408 6.16667 20.7859 6.16667 21.25C6.16667 21.7141 6.35104 22.1592 6.67923 22.4874C7.00742 22.8156 7.45254 23 7.91667 23Z" stroke="#374327" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <button type="button" class="header__mobile-catalog-menu-action" data-mobile-panel-trigger="favorites" aria-expanded="false" aria-controls="mobileCatalogPanel">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.3595 4.7244L12 5.37734L12.6405 4.7244C14.8961 2.4252 18.5589 2.4252 20.8143 4.7244C23.0619 7.01548 23.0619 10.7239 20.8143 13.0149L12 22L3.18567 13.0149C0.938109 10.7239 0.938109 7.01548 3.18567 4.7244C5.44119 2.4252 9.10395 2.4252 11.3595 4.7244Z" stroke="#374327" stroke-width="1.6"/>
+                    </svg>
+                </button>
+                <button type="button" class="header__mobile-catalog-menu-action" data-mobile-panel-trigger="auth" aria-expanded="false" aria-controls="mobileCatalogPanel">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.1223 7.11538C15.9385 9.65724 14.0599 11.7308 11.9974 11.7308C9.93498 11.7308 8.05306 9.65772 7.8726 7.11538C7.68511 4.47115 9.51314 2.5 11.9974 2.5C14.4817 2.5 16.3098 4.51923 16.1223 7.11538Z" stroke="#374327" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12.0002 22.5009C16.0782 22.5009 20.2171 20.1932 20.983 15.8375C21.0754 15.3124 20.7857 14.8086 20.2499 14.8086H3.75055C3.21432 14.8086 2.92465 15.3124 3.01699 15.8375C3.78337 20.1932 7.92227 22.5009 12.0002 22.5009Z" stroke="#374327" stroke-width="1.6" stroke-miterlimit="10"/>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+
+        <div class="header__mobile-cart-preview" id="mobileCatalogPanel" aria-hidden="true">
+            <div class="header__mobile-panel-section header__mobile-panel-section--active" data-mobile-panel="cart">
+            <div class="header__mobile-cart-items">
+                <article class="header__mobile-cart-item">
+                    <div class="header__mobile-cart-item-image">
+                        <img src="/assets/images/products/product1.png" alt="Леденцы для горла с травами" width="84" height="84" loading="lazy">
+                    </div>
+                    <div class="header__mobile-cart-item-info">
+                        <div class="header__mobile-cart-item-title">Леденцы для горла с травами</div>
+                        <div class="header__mobile-cart-item-brand">Ryukakusan</div>
+                        <div class="header__mobile-cart-item-footer">
+                            <div class="header__mobile-cart-item-price">2 974 ₽</div>
+                            <div class="header__mobile-cart-item-quantity" aria-label="Количество">
+                                <button type="button" class="header__mobile-cart-quantity-btn" aria-label="Уменьшить количество">
+                                    <span>-</span>
+                                </button>
+                                <span class="header__mobile-cart-quantity-value">1</span>
+                                <button type="button" class="header__mobile-cart-quantity-btn" aria-label="Увеличить количество">
+                                    <span>+</span>
+                                </button>
+                            </div>
+                            <div class="header__mobile-cart-item-actions">
+                                <button type="button" class="header__mobile-cart-action-btn" aria-label="Добавить в избранное">
+                                    <i class="icon icon-favorite"></i>
+                                </button>
+                                <button type="button" class="header__mobile-cart-action-btn" aria-label="Удалить из корзины">
+                                    <i class="icon icon-close"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="header__mobile-cart-item">
+                    <div class="header__mobile-cart-item-image">
+                        <img src="/assets/images/products/product2.png" alt="Леденцы для горла с травами" width="84" height="84" loading="lazy">
+                    </div>
+                    <div class="header__mobile-cart-item-info">
+                        <div class="header__mobile-cart-item-title">Леденцы для горла с травами</div>
+                        <div class="header__mobile-cart-item-brand">Ryukakusan</div>
+                        <div class="header__mobile-cart-item-footer">
+                            <div class="header__mobile-cart-item-price">2 974 ₽</div>
+                            <div class="header__mobile-cart-item-quantity" aria-label="Количество">
+                                <button type="button" class="header__mobile-cart-quantity-btn" aria-label="Уменьшить количество">
+                                    <span>-</span>
+                                </button>
+                                <span class="header__mobile-cart-quantity-value">1</span>
+                                <button type="button" class="header__mobile-cart-quantity-btn" aria-label="Увеличить количество">
+                                    <span>+</span>
+                                </button>
+                            </div>
+                            <div class="header__mobile-cart-item-actions">
+                                <button type="button" class="header__mobile-cart-action-btn" aria-label="Добавить в избранное">
+                                    <i class="icon icon-favorite"></i>
+                                </button>
+                                <button type="button" class="header__mobile-cart-action-btn" aria-label="Удалить из корзины">
+                                    <i class="icon icon-close"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="header__mobile-cart-item">
+                    <div class="header__mobile-cart-item-image">
+                        <img src="/assets/images/products/product3.png" alt="Леденцы для горла с травами" width="84" height="84" loading="lazy">
+                    </div>
+                    <div class="header__mobile-cart-item-info">
+                        <div class="header__mobile-cart-item-title">Леденцы для горла с травами</div>
+                        <div class="header__mobile-cart-item-brand">Ryukakusan</div>
+                        <div class="header__mobile-cart-item-footer">
+                            <div class="header__mobile-cart-item-price">2 974 ₽</div>
+                            <div class="header__mobile-cart-item-quantity" aria-label="Количество">
+                                <button type="button" class="header__mobile-cart-quantity-btn" aria-label="Уменьшить количество">
+                                    <span>-</span>
+                                </button>
+                                <span class="header__mobile-cart-quantity-value">1</span>
+                                <button type="button" class="header__mobile-cart-quantity-btn" aria-label="Увеличить количество">
+                                    <span>+</span>
+                                </button>
+                            </div>
+                            <div class="header__mobile-cart-item-actions">
+                                <button type="button" class="header__mobile-cart-action-btn" aria-label="Добавить в избранное">
+                                    <i class="icon icon-favorite"></i>
+                                </button>
+                                <button type="button" class="header__mobile-cart-action-btn" aria-label="Удалить из корзины">
+                                    <i class="icon icon-close"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+            </div>
+
+            <div class="header__mobile-cart-summary">
+                <div class="header__mobile-cart-summary-info">
+                    <div class="header__mobile-cart-summary-label">Сумма к оплате</div>
+                    <div class="header__mobile-cart-summary-value">8 922 ₽</div>
+                </div>
+                <a href="/cart2.html" class="header__mobile-cart-summary-btn">
+                    <span>Доставка и оплата</span>
+                    <i class="icon icon-vector"></i>
+                </a>
+            </div>
+
+                <div class="header__mobile-cart-empty" aria-hidden="true">
+                <div class="header__mobile-cart-empty-icon">
+                    <div data-svg-wrapper>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.32833 4.8H20.078C21.6857 4.8 22.8465 6.28167 22.4055 7.77267L20.4758 14.306C20.1783 15.3093 19.2287 16 18.1483 16H7.464C6.3825 16 5.43167 15.3082 5.13533 14.306L2.32833 4.8ZM2.32833 4.8L1.5 2M17.25 23C17.7141 23 18.1593 22.8156 18.4874 22.4874C18.8156 22.1592 19 21.7141 19 21.25C19 20.7859 18.8156 20.3408 18.4874 20.0126C18.1593 19.6844 17.7141 19.5 17.25 19.5C16.7859 19.5 16.3408 19.6844 16.0126 20.0126C15.6844 20.3408 15.5 20.7859 15.5 21.25C15.5 21.7141 15.6844 22.1592 16.0126 22.4874C16.3408 22.8156 16.7859 23 17.25 23ZM7.91667 23C8.3808 23 8.8259 22.8156 9.1541 22.4874C9.4823 22.1592 9.6667 21.7141 9.6667 21.25C9.6667 20.7859 9.4823 20.3408 9.1541 20.0126C8.8259 19.6844 8.3808 19.5 7.91667 19.5C7.45254 19.5 7.00742 19.6844 6.67923 20.0126C6.35104 20.3408 6.16667 20.7859 6.16667 21.25C6.16667 21.7141 6.35104 22.1592 6.67923 22.4874C7.00742 22.8156 7.45254 23 7.91667 23Z" stroke="#3C7A55" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="header__mobile-cart-empty-text">
+                    <p class="header__mobile-cart-empty-title">Корзина</p>
+                    <p class="header__mobile-cart-empty-subtitle">Ваша корзина пуста!</p>
+                </div>
+
+                <a href="/catalog.html" class="header__mobile-cart-empty-btn">
+                    За покупками
+                </a>
+            </div>
+            </div>
+
+            <div class="header__mobile-panel-section" data-mobile-panel="favorites">
+                <div class="header__mobile-cart-items">
+                    <article class="header__mobile-cart-item">
+                        <div class="header__mobile-cart-item-image">
+                            <img src="/assets/images/products/product1.png" alt="Леденцы для горла с травами" width="84" height="84" loading="lazy">
+                        </div>
+                        <div class="header__mobile-cart-item-info">
+                            <div class="header__mobile-cart-item-title">Леденцы для горла с травами</div>
+                            <div class="header__mobile-cart-item-brand">Ryukakusan</div>
+                            <div class="header__mobile-cart-item-footer">
+                                <div class="header__mobile-cart-item-price">2 974 ₽</div>
+                                <div class="header__mobile-cart-item-quantity" aria-label="Количество">
+                                    <button type="button" class="header__mobile-cart-quantity-btn" aria-label="Уменьшить количество">
+                                        <span>-</span>
+                                    </button>
+                                    <span class="header__mobile-cart-quantity-value">1</span>
+                                    <button type="button" class="header__mobile-cart-quantity-btn" aria-label="Увеличить количество">
+                                        <span>+</span>
+                                    </button>
+                                </div>
+                                <div class="header__mobile-cart-item-actions">
+                                        <button type="button" class="header__mobile-cart-action-btn" aria-label="Добавить в корзину">
+                                            <i class="icon icon-cart"></i>
+                                        </button>
+                                    <button type="button" class="header__mobile-cart-action-btn" aria-label="Удалить из избранного">
+                                        <i class="icon icon-close"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="header__mobile-cart-summary header__mobile-cart-summary--favorites">
+                    <div class="header__mobile-cart-summary-info">
+                        <div class="header__mobile-cart-summary-label">Сумма к оплате</div>
+                        <div class="header__mobile-cart-summary-value">2 974 ₽</div>
+                    </div>
+                    <a href="/cart2.html" class="header__mobile-cart-summary-btn">
+                        <span>Добавить в корзину</span>
+                    </a>
+                </div>
+
+                <div class="header__mobile-cart-empty header__mobile-cart-empty--favorites" aria-hidden="true">
+                    <div class="header__mobile-cart-empty-icon">
+                        <div data-svg-wrapper>
+                            <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.6593 2.52445L11.2998 3.17739L11.9403 2.52445C14.1959 0.22525 17.8587 0.22525 20.1141 2.52445C22.3617 4.81553 22.3617 8.52395 20.1141 10.815L11.2998 19.8L2.48548 10.815C0.237914 8.52395 0.237914 4.81553 2.48548 2.52445C4.74099 0.22525 8.40375 0.22525 10.6593 2.52445Z" stroke="#3C4534" stroke-width="1.6"/>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="header__mobile-cart-empty-text">
+                        <p class="header__mobile-cart-empty-title">Избранное</p>
+                        <p class="header__mobile-cart-empty-subtitle">В избранном пусто!</p>
+                    </div>
+
+                    <a href="/catalog.html" class="header__mobile-cart-empty-btn">
+                        За покупками
+                    </a>
+                </div>
+            </div>
+
+            <div class="header__mobile-panel-section" data-mobile-panel="auth">
+                <div class="header__mobile-auth-card">
+                    <div class="header__mobile-auth-tabs" role="tablist">
+                        <span class="header__mobile-auth-tabs-indicator" aria-hidden="true"></span>
+                        <button type="button" class="header__mobile-auth-tab header__mobile-auth-tab--active" data-auth-tab="login" role="tab" aria-selected="true">
+                            Авторизация
+                        </button>
+                        <button type="button" class="header__mobile-auth-tab" data-auth-tab="register" role="tab" aria-selected="false">
+                            Регистрация
+                        </button>
+                    </div>
+
+                    <div class="header__mobile-auth-forms">
+                        <div class="header__mobile-auth-form header__mobile-auth-form--active" data-auth-form="login">
+                            <div class="header__mobile-auth-field-group">
+                                <label class="header__mobile-auth-label">Введите имя пользователя или адрес электронной почты</label>
+                                <div class="header__mobile-auth-input-wrapper">
+                                    <input type="text" class="header__mobile-auth-input" placeholder="example@domain.com">
+                                </div>
+                            </div>
+
+                            <div class="header__mobile-auth-field-group">
+                                <label class="header__mobile-auth-label">Пароль</label>
+                                <div class="header__mobile-auth-input-wrapper header__mobile-auth-input-wrapper--password">
+                                    <input type="password" class="header__mobile-auth-input" placeholder="Ваш пароль">
+                                    <button type="button" class="header__mobile-auth-input-icon" aria-label="Показать пароль" data-svg-wrapper>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.275 15.296C2.425 14.192 2 13.639 2 12C2 10.36 2.425 9.809 3.275 8.704C4.972 6.5 7.818 4 12 4C16.182 4 19.028 6.5 20.725 8.704C21.575 9.81 22 10.361 22 12C22 13.64 21.575 14.191 20.725 15.296C19.028 17.5 16.182 20 12 20C7.818 20 4.972 17.5 3.275 15.296Z" stroke="#3C4534" stroke-width="1.5"/>
+                                            <path d="M15 12C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 15 12 15C11.2044 15 10.4413 14.6839 9.87868 14.1213C9.31607 13.5587 9 12.7956 9 12C9 11.2044 9.31607 10.4413 9.87868 9.87868C10.4413 9.31607 11.2044 9 12 9C12.7956 9 13.5587 9.31607 14.1213 9.87868C14.6839 10.4413 15 11.2044 15 12Z" stroke="#3C4534" stroke-width="1.5"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="header__mobile-auth-row">
+                                <label class="header__mobile-auth-checkbox">
+                                    <input type="checkbox">
+                                    <span class="header__mobile-auth-checkbox-box">
+                                        <div class="header__mobile-auth-checkbox-box-inner">
+                                            <div data-svg-wrapper style="position: relative">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_header_mobile_1)">
+                                                        <path d="M1.33203 7.32697L5.41759 11.3237L11.99 1.33188" stroke="white" stroke-width="2.54694" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_header_mobile_1">
+                                                            <rect width="13.3224" height="13.3224" fill="white"/>
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </span>
+                                    <span class="header__mobile-auth-checkbox-label">Запомнить меня</span>
+                                </label>
+                                <button type="button" class="header__mobile-auth-link">Забыли пароль?</button>
+                            </div>
+
+                            <div class="header__mobile-auth-actions">
+                                <button type="button" class="header__mobile-auth-btn">Авторизоваться</button>
+                            </div>
+                        </div>
+
+                        <div class="header__mobile-auth-form" data-auth-form="register">
+                            <div class="header__mobile-auth-field-group">
+                                <label class="header__mobile-auth-label">Адрес электронной почты</label>
+                                <div class="header__mobile-auth-input-wrapper">
+                                    <input type="email" class="header__mobile-auth-input" placeholder="example@domain.com">
+                                </div>
+                            </div>
+
+                            <div class="header__mobile-auth-field-group">
+                                <label class="header__mobile-auth-label">Пароль</label>
+                                <div class="header__mobile-auth-input-wrapper header__mobile-auth-input-wrapper--password">
+                                    <input type="password" class="header__mobile-auth-input" placeholder="Создайте пароль">
+                                    <button type="button" class="header__mobile-auth-input-icon" aria-label="Показать пароль" data-svg-wrapper>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.275 15.296C2.425 14.192 2 13.639 2 12C2 10.36 2.425 9.809 3.275 8.704C4.972 6.5 7.818 4 12 4C16.182 4 19.028 6.5 20.725 8.704C21.575 9.81 22 10.361 22 12C22 13.64 21.575 14.191 20.725 15.296C19.028 17.5 16.182 20 12 20C7.818 20 4.972 17.5 3.275 15.296Z" stroke="#3C4534" stroke-width="1.5"/>
+                                            <path d="M15 12C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 15 12 15C11.2044 15 10.4413 14.6839 9.87868 14.1213C9.31607 13.5587 9 12.7956 9 12C9 11.2044 9.31607 10.4413 9.87868 9.87868C10.4413 9.31607 11.2044 9 12 9C12.7956 9 13.5587 9.31607 14.1213 9.87868C14.6839 10.4413 15 11.2044 15 12Z" stroke="#3C4534" stroke-width="1.5"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <label class="header__mobile-auth-checkbox">
+                                <input type="checkbox">
+                                <span class="header__mobile-auth-checkbox-box">
+                                    <div class="header__mobile-auth-checkbox-box-inner">
+                                        <div data-svg-wrapper style="position: relative">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_header_mobile_2)">
+                                                    <path d="M1.33203 7.32697L5.41759 11.3237L11.99 1.33188" stroke="white" stroke-width="2.54694" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_header_mobile_2">
+                                                        <rect width="13.3224" height="13.3224" fill="white"/>
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </span>
+                                <span class="header__mobile-auth-checkbox-label">Запомнить меня</span>
+                            </label>
+
+                            <div class="header__mobile-auth-actions">
+                                <button type="button" class="header__mobile-auth-btn">Зарегистрироваться</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Контент меню -->
+        <div class="header__mobile-catalog-menu-body">
+            <div class="header__mobile-catalog-menu-list">
+                <button type="button" class="header__mobile-catalog-menu-item" data-mobile-category="popular">
+                    <span class="header__mobile-catalog-menu-item-title">Популярное</span>
+                    <span class="header__mobile-catalog-menu-item-icon" aria-hidden="true">
+                        <i class="icon icon-vector"></i>
+                    </span>
+                </button>
+                <button type="button" class="header__mobile-catalog-menu-item" data-mobile-category="new">
+                    <span class="header__mobile-catalog-menu-item-title">Новинки</span>
+                    <span class="header__mobile-catalog-menu-item-icon" aria-hidden="true">
+                        <i class="icon icon-vector"></i>
+                    </span>
+                </button>
+                <button type="button" class="header__mobile-catalog-menu-item" data-mobile-category="seasonal">
+                    <span class="header__mobile-catalog-menu-item-title">Сезонное</span>
+                    <span class="header__mobile-catalog-menu-item-icon" aria-hidden="true">
+                        <i class="icon icon-vector"></i>
+                    </span>
+                </button>
+                <button type="button" class="header__mobile-catalog-menu-item" data-mobile-category="health">
+                    <span class="header__mobile-catalog-menu-item-title">Здоровье</span>
+                    <span class="header__mobile-catalog-menu-item-icon" aria-hidden="true">
+                        <i class="icon icon-vector"></i>
+                    </span>
+                </button>
+                <button type="button" class="header__mobile-catalog-menu-item" data-mobile-category="medical">
+                    <span class="header__mobile-catalog-menu-item-title">Медицинские товары</span>
+                    <span class="header__mobile-catalog-menu-item-icon" aria-hidden="true">
+                        <i class="icon icon-vector"></i>
+                    </span>
+                </button>
+                <button type="button" class="header__mobile-catalog-menu-item" data-mobile-category="beauty">
+                    <span class="header__mobile-catalog-menu-item-title">Красота и уход</span>
+                    <span class="header__mobile-catalog-menu-item-icon" aria-hidden="true">
+                        <i class="icon icon-vector"></i>
+                    </span>
+                </button>
+                <button type="button" class="header__mobile-catalog-menu-item" data-mobile-category="hygiene">
+                    <span class="header__mobile-catalog-menu-item-title">Гигиена и быт</span>
+                    <span class="header__mobile-catalog-menu-item-icon" aria-hidden="true">
+                        <i class="icon icon-vector"></i>
+                    </span>
+                </button>
+                <button type="button" class="header__mobile-catalog-menu-item" data-mobile-category="kids">
+                    <span class="header__mobile-catalog-menu-item-title">Дети и мамы</span>
+                    <span class="header__mobile-catalog-menu-item-icon" aria-hidden="true">
+                        <i class="icon icon-vector"></i>
+                    </span>
+                </button>
+                <button type="button" class="header__mobile-catalog-menu-item" data-mobile-category="sport">
+                    <span class="header__mobile-catalog-menu-item-title">Спорт и активность</span>
+                    <span class="header__mobile-catalog-menu-item-icon" aria-hidden="true">
+                        <i class="icon icon-vector"></i>
+                    </span>
+                </button>
+                <button type="button" class="header__mobile-catalog-menu-item" data-mobile-category="food">
+                    <span class="header__mobile-catalog-menu-item-title">Продукты и напитки</span>
+                    <span class="header__mobile-catalog-menu-item-icon" aria-hidden="true">
+                        <i class="icon icon-vector"></i>
+                    </span>
+                </button>
+                <button type="button" class="header__mobile-catalog-menu-item" data-mobile-category="home">
+                    <span class="header__mobile-catalog-menu-item-title">Дом и здоровье</span>
+                    <span class="header__mobile-catalog-menu-item-icon" aria-hidden="true">
+                        <i class="icon icon-vector"></i>
+                    </span>
+                </button>
+                <button type="button" class="header__mobile-catalog-menu-item" data-mobile-category="tech">
+                    <span class="header__mobile-catalog-menu-item-title">Технологии и инновации</span>
+                    <span class="header__mobile-catalog-menu-item-icon" aria-hidden="true">
+                        <i class="icon icon-vector"></i>
+                    </span>
+                </button>
+                <button type="button" class="header__mobile-catalog-menu-item" data-mobile-category="digital">
+                    <span class="header__mobile-catalog-menu-item-title">Цифровое здоровье</span>
+                    <span class="header__mobile-catalog-menu-item-icon" aria-hidden="true">
+                        <i class="icon icon-vector"></i>
+                    </span>
+                </button>
+            </div>
+
+            <div class="header__mobile-catalog-submenu">
+                <div class="header__mobile-catalog-submenu-block header__mobile-catalog-submenu-block--active" data-mobile-submenu="popular">
+                    <div class="header__mobile-catalog-submenu-heading">
+                        <button type="button" class="header__mobile-catalog-submenu-back" aria-label="Назад">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.6364 6.00003C11.6841 5.99939 11.7313 6.00973 11.7752 6.03037C11.819 6.05102 11.8584 6.08152 11.8909 6.11991C12.0364 6.27975 12.0364 6.5275 11.8909 6.68734L8.87273 10.004L11.8909 13.3127C12.0364 13.4725 12.0364 13.7203 11.8909 13.8801C11.7455 14.04 11.52 14.04 11.3745 13.8801L8.10909 10.2757C7.96364 10.1159 7.96364 9.86815 8.10909 9.70831L11.3818 6.11991C11.4545 6.03999 11.5491 6.00003 11.6364 6.00003Z" fill="#151A0F"/>
+                            </svg>
+                        </button>
+                        <span class="header__mobile-catalog-submenu-heading-title">Популярное</span>
+                    </div>
+                    <div class="header__mobile-catalog-submenu-list">
+                        <a href="/catalog.html?filter=popular" class="header__mobile-catalog-submenu-item">
+                            <span>Все популярные товары</span>
+                            <span class="header__mobile-catalog-submenu-item-icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.36364 14C8.31594 14.0006 8.26866 13.9903 8.22482 13.9696C8.18098 13.949 8.14156 13.9185 8.10909 13.8801C7.96364 13.7203 7.96364 13.4725 8.10909 13.3127L11.1273 9.99599L8.10909 6.68731C7.96364 6.52747 7.96364 6.27972 8.10909 6.11988C8.25455 5.96004 8.48 5.96004 8.62545 6.11988L11.8909 9.72426C12.0364 9.8841 12.0364 10.1319 11.8909 10.2917L8.61818 13.8801C8.54545 13.96 8.45091 14 8.36364 14Z" fill="#151A0F"/>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="header__mobile-catalog-submenu-block" data-mobile-submenu="new">
+                    <div class="header__mobile-catalog-submenu-heading">
+                        <button type="button" class="header__mobile-catalog-submenu-back" aria-label="Назад">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.6364 6.00003C11.6841 5.99939 11.7313 6.00973 11.7752 6.03037C11.819 6.05102 11.8584 6.08152 11.8909 6.11991C12.0364 6.27975 12.0364 6.5275 11.8909 6.68734L8.87273 10.004L11.8909 13.3127C12.0364 13.4725 12.0364 13.7203 11.8909 13.8801C11.7455 14.04 11.52 14.04 11.3745 13.8801L8.10909 10.2757C7.96364 10.1159 7.96364 9.86815 8.10909 9.70831L11.3818 6.11991C11.4545 6.03999 11.5491 6.00003 11.6364 6.00003Z" fill="#151A0F"/>
+                            </svg>
+                        </button>
+                        <span class="header__mobile-catalog-submenu-heading-title">Новинки</span>
+                    </div>
+                    <div class="header__mobile-catalog-submenu-list">
+                        <a href="/catalog.html?filter=new" class="header__mobile-catalog-submenu-item">
+                            <span>Все новинки</span>
+                            <span class="header__mobile-catalog-submenu-item-icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.36364 14C8.31594 14.0006 8.26866 13.9903 8.22482 13.9696C8.18098 13.949 8.14156 13.9185 8.10909 13.8801C7.96364 13.7203 7.96364 13.4725 8.10909 13.3127L11.1273 9.99599L8.10909 6.68731C7.96364 6.52747 7.96364 6.27972 8.10909 6.11988C8.25455 5.96004 8.48 5.96004 8.62545 6.11988L11.8909 9.72426C12.0364 9.8841 12.0364 10.1319 11.8909 10.2917L8.61818 13.8801C8.54545 13.96 8.45091 14 8.36364 14Z" fill="#151A0F"/>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="header__mobile-catalog-submenu-block" data-mobile-submenu="seasonal">
+                    <div class="header__mobile-catalog-submenu-heading">
+                        <button type="button" class="header__mobile-catalog-submenu-back" aria-label="Назад">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.6364 6.00003C11.6841 5.99939 11.7313 6.00973 11.7752 6.03037C11.819 6.05102 11.8584 6.08152 11.8909 6.11991C12.0364 6.27975 12.0364 6.5275 11.8909 6.68734L8.87273 10.004L11.8909 13.3127C12.0364 13.4725 12.0364 13.7203 11.8909 13.8801C11.7455 14.04 11.52 14.04 11.3745 13.8801L8.10909 10.2757C7.96364 10.1159 7.96364 9.86815 8.10909 9.70831L11.3818 6.11991C11.4545 6.03999 11.5491 6.00003 11.6364 6.00003Z" fill="#151A0F"/>
+                            </svg>
+                        </button>
+                        <span class="header__mobile-catalog-submenu-heading-title">Сезонное</span>
+                    </div>
+                    <div class="header__mobile-catalog-submenu-list">
+                        <a href="/catalog.html?filter=seasonal" class="header__mobile-catalog-submenu-item">
+                            <span>Все сезонные товары</span>
+                            <span class="header__mobile-catalog-submenu-item-icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.36364 14C8.31594 14.0006 8.26866 13.9903 8.22482 13.9696C8.18098 13.949 8.14156 13.9185 8.10909 13.8801C7.96364 13.7203 7.96364 13.4725 8.10909 13.3127L11.1273 9.99599L8.10909 6.68731C7.96364 6.52747 7.96364 6.27972 8.10909 6.11988C8.25455 5.96004 8.48 5.96004 8.62545 6.11988L11.8909 9.72426C12.0364 9.8841 12.0364 10.1319 11.8909 10.2917L8.61818 13.8801C8.54545 13.96 8.45091 14 8.36364 14Z" fill="#151A0F"/>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="header__mobile-catalog-submenu-block" data-mobile-submenu="health">
+                    <div class="header__mobile-catalog-submenu-heading">
+                        <button type="button" class="header__mobile-catalog-submenu-back" aria-label="Назад">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.6364 6.00003C11.6841 5.99939 11.7313 6.00973 11.7752 6.03037C11.819 6.05102 11.8584 6.08152 11.8909 6.11991C12.0364 6.27975 12.0364 6.5275 11.8909 6.68734L8.87273 10.004L11.8909 13.3127C12.0364 13.4725 12.0364 13.7203 11.8909 13.8801C11.7455 14.04 11.52 14.04 11.3745 13.8801L8.10909 10.2757C7.96364 10.1159 7.96364 9.86815 8.10909 9.70831L11.3818 6.11991C11.4545 6.03999 11.5491 6.00003 11.6364 6.00003Z" fill="#151A0F"/>
+                            </svg>
+                        </button>
+                        <span class="header__mobile-catalog-submenu-heading-title">Здоровье</span>
+                    </div>
+                    <div class="header__mobile-catalog-submenu-list">
+                        <a href="/catalog.html?category=health&subcategory=vitamins" class="header__mobile-catalog-submenu-item">
+                            <span>Витамины и минералы</span>
+                            <span class="header__mobile-catalog-submenu-item-icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.36364 14C8.31594 14.0006 8.26866 13.9903 8.22482 13.9696C8.18098 13.949 8.14156 13.9185 8.10909 13.8801C7.96364 13.7203 7.96364 13.4725 8.10909 13.3127L11.1273 9.99599L8.10909 6.68731C7.96364 6.52747 7.96364 6.27972 8.10909 6.11988C8.25455 5.96004 8.48 5.96004 8.62545 6.11988L11.8909 9.72426C12.0364 9.8841 12.0364 10.1319 11.8909 10.2917L8.61818 13.8801C8.54545 13.96 8.45091 14 8.36364 14Z" fill="#151A0F"/>
+                                </svg>
+                            </span>
+                        </a>
+                        <a href="/catalog.html?category=health&subcategory=organs" class="header__mobile-catalog-submenu-item">
+                            <span>Поддержка органов</span>
+                            <span class="header__mobile-catalog-submenu-item-icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.36364 14C8.31594 14.0006 8.26866 13.9903 8.22482 13.9696C8.18098 13.949 8.14156 13.9185 8.10909 13.8801C7.96364 13.7203 7.96364 13.4725 8.10909 13.3127L11.1273 9.99599L8.10909 6.68731C7.96364 6.52747 7.96364 6.27972 8.10909 6.11988C8.25455 5.96004 8.48 5.96004 8.62545 6.11988L11.8909 9.72426C12.0364 9.8841 12.0364 10.1319 11.8909 10.2917L8.61818 13.8801C8.54545 13.96 8.45091 14 8.36364 14Z" fill="#151A0F"/>
+                                </svg>
+                            </span>
+                        </a>
+                        <a href="/catalog.html?category=health&subcategory=immunity" class="header__mobile-catalog-submenu-item">
+                            <span>Иммунитет и энергия</span>
+                            <span class="header__mobile-catalog-submenu-item-icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.36364 14C8.31594 14.0006 8.26866 13.9903 8.22482 13.9696C8.18098 13.949 8.14156 13.9185 8.10909 13.8801C7.96364 13.7203 7.96364 13.4725 8.10909 13.3127L11.1273 9.99599L8.10909 6.68731C7.96364 6.52747 7.96364 6.27972 8.10909 6.11988C8.25455 5.96004 8.48 5.96004 8.62545 6.11988L11.8909 9.72426C12.0364 9.8841 12.0364 10.1319 11.8909 10.2917L8.61818 13.8801C8.54545 13.96 8.45091 14 8.36364 14Z" fill="#151A0F"/>
+                                </svg>
+                            </span>
+                        </a>
+                        <a href="/catalog.html?category=health&subcategory=beauty" class="header__mobile-catalog-submenu-item">
+                            <span>Красота и баланс</span>
+                            <span class="header__mobile-catalog-submenu-item-icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.36364 14C8.31594 14.0006 8.26866 13.9903 8.22482 13.9696C8.18098 13.949 8.14156 13.9185 8.10909 13.8801C7.96364 13.7203 7.96364 13.4725 8.10909 13.3127L11.1273 9.99599L8.10909 6.68731C7.96364 6.52747 7.96364 6.27972 8.10909 6.11988C8.25455 5.96004 8.48 5.96004 8.62545 6.11988L11.8909 9.72426C12.0364 9.8841 12.0364 10.1319 11.8909 10.2917L8.61818 13.8801C8.54545 13.96 8.45091 14 8.36364 14Z" fill="#151A0F"/>
+                                </svg>
+                            </span>
+                        </a>
+                        <a href="/catalog.html?category=health" class="header__mobile-catalog-submenu-item">
+                            <span>Все товары категории</span>
+                            <span class="header__mobile-catalog-submenu-item-icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.36364 14C8.31594 14.0006 8.26866 13.9903 8.22482 13.9696C8.18098 13.949 8.14156 13.9185 8.10909 13.8801C7.96364 13.7203 7.96364 13.4725 8.10909 13.3127L11.1273 9.99599L8.10909 6.68731C7.96364 6.52747 7.96364 6.27972 8.10909 6.11988C8.25455 5.96004 8.48 5.96004 8.62545 6.11988L11.8909 9.72426C12.0364 9.8841 12.0364 10.1319 11.8909 10.2917L8.61818 13.8801C8.54545 13.96 8.45091 14 8.36364 14Z" fill="#151A0F"/>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="header__mobile-catalog-submenu-block" data-mobile-submenu="medical">
+                    <div class="header__mobile-catalog-submenu-heading">
+                        <button type="button" class="header__mobile-catalog-submenu-back" aria-label="Назад">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.6364 6.00003C11.6841 5.99939 11.7313 6.00973 11.7752 6.03037C11.819 6.05102 11.8584 6.08152 11.8909 6.11991C12.0364 6.27975 12.0364 6.5275 11.8909 6.68734L8.87273 10.004L11.8909 13.3127C12.0364 13.4725 12.0364 13.7203 11.8909 13.8801C11.7455 14.04 11.52 14.04 11.3745 13.8801L8.10909 10.2757C7.96364 10.1159 7.96364 9.86815 8.10909 9.70831L11.3818 6.11991C11.4545 6.03999 11.5491 6.00003 11.6364 6.00003Z" fill="#151A0F"/>
+                            </svg>
+                        </button>
+                        <span class="header__mobile-catalog-submenu-heading-title">Медицинские товары</span>
+                    </div>
+                    <div class="header__mobile-catalog-submenu-list">
+                        <a href="/catalog.html?category=medical" class="header__mobile-catalog-submenu-item">
+                            <span>Все товары категории</span>
+                            <span class="header__mobile-catalog-submenu-item-icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.36364 14C8.31594 14.0006 8.26866 13.9903 8.22482 13.9696C8.18098 13.949 8.14156 13.9185 8.10909 13.8801C7.96364 13.7203 7.96364 13.4725 8.10909 13.3127L11.1273 9.99599L8.10909 6.68731C7.96364 6.52747 7.96364 6.27972 8.10909 6.11988C8.25455 5.96004 8.48 5.96004 8.62545 6.11988L11.8909 9.72426C12.0364 9.8841 12.0364 10.1319 11.8909 10.2917L8.61818 13.8801C8.54545 13.96 8.45091 14 8.36364 14Z" fill="#151A0F"/>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="header__mobile-catalog-submenu-block" data-mobile-submenu="beauty">
+                    <div class="header__mobile-catalog-submenu-heading">
+                        <button type="button" class="header__mobile-catalog-submenu-back" aria-label="Назад">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.6364 6.00003C11.6841 5.99939 11.7313 6.00973 11.7752 6.03037C11.819 6.05102 11.8584 6.08152 11.8909 6.11991C12.0364 6.27975 12.0364 6.5275 11.8909 6.68734L8.87273 10.004L11.8909 13.3127C12.0364 13.4725 12.0364 13.7203 11.8909 13.8801C11.7455 14.04 11.52 14.04 11.3745 13.8801L8.10909 10.2757C7.96364 10.1159 7.96364 9.86815 8.10909 9.70831L11.3818 6.11991C11.4545 6.03999 11.5491 6.00003 11.6364 6.00003Z" fill="#151A0F"/>
+                            </svg>
+                        </button>
+                        <span class="header__mobile-catalog-submenu-heading-title">Красота и уход</span>
+                    </div>
+                    <div class="header__mobile-catalog-submenu-list">
+                        <a href="/catalog.html?category=beauty&subcategory=skin-care" class="header__mobile-catalog-submenu-item">
+                            <span>Уход за кожей</span>
+                            <span class="header__mobile-catalog-submenu-item-icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.36364 14C8.31594 14.0006 8.26866 13.9903 8.22482 13.9696C8.18098 13.949 8.14156 13.9185 8.10909 13.8801C7.96364 13.7203 7.96364 13.4725 8.10909 13.3127L11.1273 9.99599L8.10909 6.68731C7.96364 6.52747 7.96364 6.27972 8.10909 6.11988C8.25455 5.96004 8.48 5.96004 8.62545 6.11988L11.8909 9.72426C12.0364 9.8841 12.0364 10.1319 11.8909 10.2917L8.61818 13.8801C8.54545 13.96 8.45091 14 8.36364 14Z" fill="#151A0F"/>
+                                </svg>
+                            </span>
+                        </a>
+                        <a href="/catalog.html?category=beauty&subcategory=hair-care" class="header__mobile-catalog-submenu-item">
+                            <span>Уход за волосами</span>
+                            <span class="header__mobile-catalog-submenu-item-icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.36364 14C8.31594 14.0006 8.26866 13.9903 8.22482 13.9696C8.18098 13.949 8.14156 13.9185 8.10909 13.8801C7.96364 13.7203 7.96364 13.4725 8.10909 13.3127L11.1273 9.99599L8.10909 6.68731C7.96364 6.52747 7.96364 6.27972 8.10909 6.11988C8.25455 5.96004 8.48 5.96004 8.62545 6.11988L11.8909 9.72426C12.0364 9.8841 12.0364 10.1319 11.8909 10.2917L8.61818 13.8801C8.54545 13.96 8.45091 14 8.36364 14Z" fill="#151A0F"/>
+                                </svg>
+                            </span>
+                        </a>
+                        <a href="/catalog.html?category=beauty&subcategory=body-care" class="header__mobile-catalog-submenu-item">
+                            <span>Уход за телом</span>
+                            <span class="header__mobile-catalog-submenu-item-icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.36364 14C8.31594 14.0006 8.26866 13.9903 8.22482 13.9696C8.18098 13.949 8.14156 13.9185 8.10909 13.8801C7.96364 13.7203 7.96364 13.4725 8.10909 13.3127L11.1273 9.99599L8.10909 6.68731C7.96364 6.52747 7.96364 6.27972 8.10909 6.11988C8.25455 5.96004 8.48 5.96004 8.62545 6.11988L11.8909 9.72426C12.0364 9.8841 12.0364 10.1319 11.8909 10.2917L8.61818 13.8801C8.54545 13.96 8.45091 14 8.36364 14Z" fill="#151A0F"/>
+                                </svg>
+                            </span>
+                        </a>
+                        <a href="/catalog.html?category=beauty" class="header__mobile-catalog-submenu-item">
+                            <span>Все товары категории</span>
+                            <span class="header__mobile-catalog-submenu-item-icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.36364 14C8.31594 14.0006 8.26866 13.9903 8.22482 13.9696C8.18098 13.949 8.14156 13.9185 8.10909 13.8801C7.96364 13.7203 7.96364 13.4725 8.10909 13.3127L11.1273 9.99599L8.10909 6.68731C7.96364 6.52747 7.96364 6.27972 8.10909 6.11988C8.25455 5.96004 8.48 5.96004 8.62545 6.11988L11.8909 9.72426C12.0364 9.8841 12.0364 10.1319 11.8909 10.2917L8.61818 13.8801C8.54545 13.96 8.45091 14 8.36364 14Z" fill="#151A0F"/>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="header__mobile-catalog-submenu-block" data-mobile-submenu="hygiene">
+                    <div class="header__mobile-catalog-submenu-heading">
+                        <button type="button" class="header__mobile-catalog-submenu-back" aria-label="Назад">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.6364 6.00003C11.6841 5.99939 11.7313 6.00973 11.7752 6.03037C11.819 6.05102 11.8584 6.08152 11.8909 6.11991C12.0364 6.27975 12.0364 6.5275 11.8909 6.68734L8.87273 10.004L11.8909 13.3127C12.0364 13.4725 12.0364 13.7203 11.8909 13.8801C11.7455 14.04 11.52 14.04 11.3745 13.8801L8.10909 10.2757C7.96364 10.1159 7.96364 9.86815 8.10909 9.70831L11.3818 6.11991C11.4545 6.03999 11.5491 6.00003 11.6364 6.00003Z" fill="#151A0F"/>
+                            </svg>
+                        </button>
+                        <span class="header__mobile-catalog-submenu-heading-title">Гигиена и быт</span>
+                    </div>
+                    <div class="header__mobile-catalog-submenu-list">
+                        <a href="/catalog.html?category=hygiene" class="header__mobile-catalog-submenu-item">
+                            <span>Все товары категории</span>
+                            <span class="header__mobile-catalog-submenu-item-icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.36364 14C8.31594 14.0006 8.26866 13.9903 8.22482 13.9696C8.18098 13.949 8.14156 13.9185 8.10909 13.8801C7.96364 13.7203 7.96364 13.4725 8.10909 13.3127L11.1273 9.99599L8.10909 6.68731C7.96364 6.52747 7.96364 6.27972 8.10909 6.11988C8.25455 5.96004 8.48 5.96004 8.62545 6.11988L11.8909 9.72426C12.0364 9.8841 12.0364 10.1319 11.8909 10.2917L8.61818 13.8801C8.54545 13.96 8.45091 14 8.36364 14Z" fill="#151A0F"/>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="header__mobile-catalog-submenu-block" data-mobile-submenu="kids">
+                    <div class="header__mobile-catalog-submenu-heading">
+                        <button type="button" class="header__mobile-catalog-submenu-back" aria-label="Назад">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.6364 6.00003C11.6841 5.99939 11.7313 6.00973 11.7752 6.03037C11.819 6.05102 11.8584 6.08152 11.8909 6.11991C12.0364 6.27975 12.0364 6.5275 11.8909 6.68734L8.87273 10.004L11.8909 13.3127C12.0364 13.4725 12.0364 13.7203 11.8909 13.8801C11.7455 14.04 11.52 14.04 11.3745 13.8801L8.10909 10.2757C7.96364 10.1159 7.96364 9.86815 8.10909 9.70831L11.3818 6.11991C11.4545 6.03999 11.5491 6.00003 11.6364 6.00003Z" fill="#151A0F"/>
+                            </svg>
+                        </button>
+                        <span class="header__mobile-catalog-submenu-heading-title">Дети и мамы</span>
+                    </div>
+                    <div class="header__mobile-catalog-submenu-list">
+                        <a href="/catalog.html?category=kids" class="header__mobile-catalog-submenu-item">
+                            <span>Все товары категории</span>
+                            <span class="header__mobile-catalog-submenu-item-icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.36364 14C8.31594 14.0006 8.26866 13.9903 8.22482 13.9696C8.18098 13.949 8.14156 13.9185 8.10909 13.8801C7.96364 13.7203 7.96364 13.4725 8.10909 13.3127L11.1273 9.99599L8.10909 6.68731C7.96364 6.52747 7.96364 6.27972 8.10909 6.11988C8.25455 5.96004 8.48 5.96004 8.62545 6.11988L11.8909 9.72426C12.0364 9.8841 12.0364 10.1319 11.8909 10.2917L8.61818 13.8801C8.54545 13.96 8.45091 14 8.36364 14Z" fill="#151A0F"/>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="header__mobile-catalog-submenu-block" data-mobile-submenu="sport">
+                    <div class="header__mobile-catalog-submenu-heading">
+                        <button type="button" class="header__mobile-catalog-submenu-back" aria-label="Назад">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.6364 6.00003C11.6841 5.99939 11.7313 6.00973 11.7752 6.03037C11.819 6.05102 11.8584 6.08152 11.8909 6.11991C12.0364 6.27975 12.0364 6.5275 11.8909 6.68734L8.87273 10.004L11.8909 13.3127C12.0364 13.4725 12.0364 13.7203 11.8909 13.8801C11.7455 14.04 11.52 14.04 11.3745 13.8801L8.10909 10.2757C7.96364 10.1159 7.96364 9.86815 8.10909 9.70831L11.3818 6.11991C11.4545 6.03999 11.5491 6.00003 11.6364 6.00003Z" fill="#151A0F"/>
+                            </svg>
+                        </button>
+                        <span class="header__mobile-catalog-submenu-heading-title">Спорт и активность</span>
+                    </div>
+                    <div class="header__mobile-catalog-submenu-list">
+                        <a href="/catalog.html?category=sport" class="header__mobile-catalog-submenu-item">
+                            <span>Все товары категории</span>
+                            <span class="header__mobile-catalog-submenu-item-icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.36364 14C8.31594 14.0006 8.26866 13.9903 8.22482 13.9696C8.18098 13.949 8.14156 13.9185 8.10909 13.8801C7.96364 13.7203 7.96364 13.4725 8.10909 13.3127L11.1273 9.99599L8.10909 6.68731C7.96364 6.52747 7.96364 6.27972 8.10909 6.11988C8.25455 5.96004 8.48 5.96004 8.62545 6.11988L11.8909 9.72426C12.0364 9.8841 12.0364 10.1319 11.8909 10.2917L8.61818 13.8801C8.54545 13.96 8.45091 14 8.36364 14Z" fill="#151A0F"/>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="header__mobile-catalog-submenu-block" data-mobile-submenu="food">
+                    <div class="header__mobile-catalog-submenu-heading">
+                        <button type="button" class="header__mobile-catalog-submenu-back" aria-label="Назад">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.6364 6.00003C11.6841 5.99939 11.7313 6.00973 11.7752 6.03037C11.819 6.05102 11.8584 6.08152 11.8909 6.11991C12.0364 6.27975 12.0364 6.5275 11.8909 6.68734L8.87273 10.004L11.8909 13.3127C12.0364 13.4725 12.0364 13.7203 11.8909 13.8801C11.7455 14.04 11.52 14.04 11.3745 13.8801L8.10909 10.2757C7.96364 10.1159 7.96364 9.86815 8.10909 9.70831L11.3818 6.11991C11.4545 6.03999 11.5491 6.00003 11.6364 6.00003Z" fill="#151A0F"/>
+                            </svg>
+                        </button>
+                        <span class="header__mobile-catalog-submenu-heading-title">Продукты и напитки</span>
+                    </div>
+                    <div class="header__mobile-catalog-submenu-list">
+                        <a href="/catalog.html?category=food" class="header__mobile-catalog-submenu-item">
+                            <span>Все товары категории</span>
+                            <span class="header__mobile-catalog-submenu-item-icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.36364 14C8.31594 14.0006 8.26866 13.9903 8.22482 13.9696C8.18098 13.949 8.14156 13.9185 8.10909 13.8801C7.96364 13.7203 7.96364 13.4725 8.10909 13.3127L11.1273 9.99599L8.10909 6.68731C7.96364 6.52747 7.96364 6.27972 8.10909 6.11988C8.25455 5.96004 8.48 5.96004 8.62545 6.11988L11.8909 9.72426C12.0364 9.8841 12.0364 10.1319 11.8909 10.2917L8.61818 13.8801C8.54545 13.96 8.45091 14 8.36364 14Z" fill="#151A0F"/>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="header__mobile-catalog-submenu-block" data-mobile-submenu="home">
+                    <div class="header__mobile-catalog-submenu-heading">
+                        <button type="button" class="header__mobile-catalog-submenu-back" aria-label="Назад">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.6364 6.00003C11.6841 5.99939 11.7313 6.00973 11.7752 6.03037C11.819 6.05102 11.8584 6.08152 11.8909 6.11991C12.0364 6.27975 12.0364 6.5275 11.8909 6.68734L8.87273 10.004L11.8909 13.3127C12.0364 13.4725 12.0364 13.7203 11.8909 13.8801C11.7455 14.04 11.52 14.04 11.3745 13.8801L8.10909 10.2757C7.96364 10.1159 7.96364 9.86815 8.10909 9.70831L11.3818 6.11991C11.4545 6.03999 11.5491 6.00003 11.6364 6.00003Z" fill="#151A0F"/>
+                            </svg>
+                        </button>
+                        <span class="header__mobile-catalog-submenu-heading-title">Дом и здоровье</span>
+                    </div>
+                    <div class="header__mobile-catalog-submenu-list">
+                        <a href="/catalog.html?category=home" class="header__mobile-catalog-submenu-item">
+                            <span>Все товары категории</span>
+                            <span class="header__mobile-catalog-submenu-item-icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.36364 14C8.31594 14.0006 8.26866 13.9903 8.22482 13.9696C8.18098 13.949 8.14156 13.9185 8.10909 13.8801C7.96364 13.7203 7.96364 13.4725 8.10909 13.3127L11.1273 9.99599L8.10909 6.68731C7.96364 6.52747 7.96364 6.27972 8.10909 6.11988C8.25455 5.96004 8.48 5.96004 8.62545 6.11988L11.8909 9.72426C12.0364 9.8841 12.0364 10.1319 11.8909 10.2917L8.61818 13.8801C8.54545 13.96 8.45091 14 8.36364 14Z" fill="#151A0F"/>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="header__mobile-catalog-submenu-block" data-mobile-submenu="tech">
+                    <div class="header__mobile-catalog-submenu-heading">
+                        <button type="button" class="header__mobile-catalog-submenu-back" aria-label="Назад">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.6364 6.00003C11.6841 5.99939 11.7313 6.00973 11.7752 6.03037C11.819 6.05102 11.8584 6.08152 11.8909 6.11991C12.0364 6.27975 12.0364 6.5275 11.8909 6.68734L8.87273 10.004L11.8909 13.3127C12.0364 13.4725 12.0364 13.7203 11.8909 13.8801C11.7455 14.04 11.52 14.04 11.3745 13.8801L8.10909 10.2757C7.96364 10.1159 7.96364 9.86815 8.10909 9.70831L11.3818 6.11991C11.4545 6.03999 11.5491 6.00003 11.6364 6.00003Z" fill="#151A0F"/>
+                            </svg>
+                        </button>
+                        <span class="header__mobile-catalog-submenu-heading-title">Технологии и инновации</span>
+                    </div>
+                    <div class="header__mobile-catalog-submenu-list">
+                        <a href="/catalog.html?category=tech" class="header__mobile-catalog-submenu-item">
+                            <span>Все товары категории</span>
+                            <span class="header__mobile-catalog-submenu-item-icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.36364 14C8.31594 14.0006 8.26866 13.9903 8.22482 13.9696C8.18098 13.949 8.14156 13.9185 8.10909 13.8801C7.96364 13.7203 7.96364 13.4725 8.10909 13.3127L11.1273 9.99599L8.10909 6.68731C7.96364 6.52747 7.96364 6.27972 8.10909 6.11988C8.25455 5.96004 8.48 5.96004 8.62545 6.11988L11.8909 9.72426C12.0364 9.8841 12.0364 10.1319 11.8909 10.2917L8.61818 13.8801C8.54545 13.96 8.45091 14 8.36364 14Z" fill="#151A0F"/>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="header__mobile-catalog-submenu-block" data-mobile-submenu="digital">
+                    <div class="header__mobile-catalog-submenu-heading">
+                        <button type="button" class="header__mobile-catalog-submenu-back" aria-label="Назад">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.6364 6.00003C11.6841 5.99939 11.7313 6.00973 11.7752 6.03037C11.819 6.05102 11.8584 6.08152 11.8909 6.11991C12.0364 6.27975 12.0364 6.5275 11.8909 6.68734L8.87273 10.004L11.8909 13.3127C12.0364 13.4725 12.0364 13.7203 11.8909 13.8801C11.7455 14.04 11.52 14.04 11.3745 13.8801L8.10909 10.2757C7.96364 10.1159 7.96364 9.86815 8.10909 9.70831L11.3818 6.11991C11.4545 6.03999 11.5491 6.00003 11.6364 6.00003Z" fill="#151A0F"/>
+                            </svg>
+                        </button>
+                        <span class="header__mobile-catalog-submenu-heading-title">Цифровое здоровье</span>
+                    </div>
+                    <div class="header__mobile-catalog-submenu-list">
+                        <a href="/catalog.html?category=digital" class="header__mobile-catalog-submenu-item">
+                            <span>Все товары категории</span>
+                            <span class="header__mobile-catalog-submenu-item-icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.36364 14C8.31594 14.0006 8.26866 13.9903 8.22482 13.9696C8.18098 13.949 8.14156 13.9185 8.10909 13.8801C7.96364 13.7203 7.96364 13.4725 8.10909 13.3127L11.1273 9.99599L8.10909 6.68731C7.96364 6.52747 7.96364 6.27972 8.10909 6.11988C8.25455 5.96004 8.48 5.96004 8.62545 6.11988L11.8909 9.72426C12.0364 9.8841 12.0364 10.1319 11.8909 10.2917L8.61818 13.8801C8.54545 13.96 8.45091 14 8.36364 14Z" fill="#151A0F"/>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+        <div class="categories-nav">
+    <div class="categories-nav__container">
+        <a href="/catalog.html?category=food-supplements" class="categories-nav__item">
+            <span>Пищевые добавки</span>
+        </a>
+        
+        <a href="/catalog.html?category=sport" class="categories-nav__item">
+            <span>Спорт</span>
+        </a>
+        
+        <a href="/catalog.html?category=beauty" class="categories-nav__item">
+            <span>Красота</span>
+        </a>
+        
+        <a href="/catalog.html?category=personal-care" class="categories-nav__item">
+            <span>Личная гигиена</span>
+        </a>
+        
+        <a href="/catalog.html?category=food" class="categories-nav__item">
+            <span>Продукты питания</span>
+        </a>
+        
+        <a href="/catalog.html?category=kids" class="categories-nav__item">
+            <span>Для детей</span>
+        </a>
+        
+        <a href="/catalog.html?category=women" class="categories-nav__item">
+            <span>Для женщин</span>
+        </a>
+        
+        <a href="/catalog.html?category=elderly" class="categories-nav__item categories-nav__item--active">
+            <span>Для пожилых</span>
+        </a>
+        
+        <a href="/catalog.html?category=men" class="categories-nav__item">
+            <span>Для мужчин</span>
+        </a>
+        
+        <div class="categories-nav__divider"></div>
+        
+        <a href="/catalog.html?filter=super-price" class="categories-nav__item">
+            <span>Суперцена</span>
+        </a>
+        
+        <a href="/catalog.html?filter=new" class="categories-nav__item">
+            <span>Новинки</span>
+        </a>
+        
+        <a href="/catalog.html?filter=popular" class="categories-nav__item">
+            <span>Популярное</span>
+        </a>
+        
+        <a href="/catalog.html" class="categories-nav__item categories-nav__item--more">
+            <span>Еще</span>
+            <img src="/assets/images/icons/chevron-right.svg" alt="" width="5" height="8">
+        </a>
+    </div>
+</div>
+
+
+
+
+
+
+    
+    
+    <main>
+        <div class="favorites-page">
+    <div class="container">
+        <div class="favorites-page__header">
+            <div style="color: #3C4534; font-size: 16px; font-family: Inter Tight; font-weight: 400; word-wrap: break-word">Избранное</div>
+        </div>
+        <div class="favorites-items">
+            <div class="cart-item">
+  <div class="cart-item__row">
+    <div class="cart-item__info">
+      <div class="cart-item__image-wrapper">
+        <img class="cart-item__image" src="/assets/images/products/product1.png" alt="Леденцы для горла с травами">
+      </div>
+      <div class="cart-item__details">
+        <a href="/product.html" class="cart-item__title">Леденцы для горла с травами</a>
+        <div class="cart-item__brand">Ryukakusan</div>
+        <div class="cart-item__actions">
+          <div class="cart-item__price" data-unit-price="2 974">2 974 ₽</div>
+          <div class="cart-item__quantity">
+            <button type="button" class="cart-item__quantity-btn cart-item__quantity-btn--minus" aria-label="Уменьшить количество">-</button>
+            <div class="cart-item__quantity-value">1</div>
+            <button type="button" class="cart-item__quantity-btn cart-item__quantity-btn--plus" aria-label="Увеличить количество">+</button>
+          </div>
+          <div class="cart-item__icons">
+            
+              <button type="button" class="cart-item__icon-btn" aria-label="Добавить в корзину">
+                <i class="icon icon-cart"></i>
+              </button>
+              <button type="button" class="cart-item__icon-btn" aria-label="Удалить из избранного">
+                <div data-svg-wrapper style="position: relative">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.17188 10.8287L10.8292 5.17139M10.8292 10.8287L5.17188 5.17139" stroke="#3C4534" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+              </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+            <div class="cart-item">
+  <div class="cart-item__row">
+    <div class="cart-item__info">
+      <div class="cart-item__image-wrapper">
+        <img class="cart-item__image" src="/assets/images/products/product2.png" alt="Леденцы для горла с травами">
+      </div>
+      <div class="cart-item__details">
+        <a href="/product.html" class="cart-item__title">Леденцы для горла с травами</a>
+        <div class="cart-item__brand">Ryukakusan</div>
+        <div class="cart-item__actions">
+          <div class="cart-item__price" data-unit-price="2 974">2 974 ₽</div>
+          <div class="cart-item__quantity">
+            <button type="button" class="cart-item__quantity-btn cart-item__quantity-btn--minus" aria-label="Уменьшить количество">-</button>
+            <div class="cart-item__quantity-value">1</div>
+            <button type="button" class="cart-item__quantity-btn cart-item__quantity-btn--plus" aria-label="Увеличить количество">+</button>
+          </div>
+          <div class="cart-item__icons">
+            
+              <button type="button" class="cart-item__icon-btn" aria-label="Добавить в корзину">
+                <i class="icon icon-cart"></i>
+              </button>
+              <button type="button" class="cart-item__icon-btn" aria-label="Удалить из избранного">
+                <div data-svg-wrapper style="position: relative">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.17188 10.8287L10.8292 5.17139M10.8292 10.8287L5.17188 5.17139" stroke="#3C4534" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+              </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+            <div class="cart-item">
+  <div class="cart-item__row">
+    <div class="cart-item__info">
+      <div class="cart-item__image-wrapper">
+        <img class="cart-item__image" src="/assets/images/products/product3.png" alt="Леденцы для горла с травами">
+      </div>
+      <div class="cart-item__details">
+        <a href="/product.html" class="cart-item__title">Леденцы для горла с травами</a>
+        <div class="cart-item__brand">Ryukakusan</div>
+        <div class="cart-item__actions">
+          <div class="cart-item__price" data-unit-price="2 974">2 974 ₽</div>
+          <div class="cart-item__quantity">
+            <button type="button" class="cart-item__quantity-btn cart-item__quantity-btn--minus" aria-label="Уменьшить количество">-</button>
+            <div class="cart-item__quantity-value">1</div>
+            <button type="button" class="cart-item__quantity-btn cart-item__quantity-btn--plus" aria-label="Увеличить количество">+</button>
+          </div>
+          <div class="cart-item__icons">
+            
+              <button type="button" class="cart-item__icon-btn" aria-label="Добавить в корзину">
+                <i class="icon icon-cart"></i>
+              </button>
+              <button type="button" class="cart-item__icon-btn" aria-label="Удалить из избранного">
+                <div data-svg-wrapper style="position: relative">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.17188 10.8287L10.8292 5.17139M10.8292 10.8287L5.17188 5.17139" stroke="#3C4534" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+              </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+        </div>
+        <div class="cart-summary">
+  <div class="cart-summary__info">
+    <div class="cart-summary__label-wrapper">
+      <div class="cart-summary__label">Сумма к оплате</div>
+    </div>
+    <div class="cart-summary__total">2 974 ₽</div>
+  </div>
+  <button type="button" class="cart-summary__button btn btn--dark">
+    <span class="cart-summary__button-text">Добавить в корзину</span>
+    
+  </button>
+</div>
+
+
+    </div>
+    <section class="products-section">
+    <div class="products-section__container">
+        <div class="products-section__content">
+            <div class="products-section__text-block">
+                <h2 class="products-section__title">Рекомендованные товары</h2>
+                
+            </div>
+        </div>
+        
+        <div class="products-section__filters">
+            <div class="products-section__filters-list">
+                <button type="button" class="products-section__filter-item" data-filter="warmth-comfort">
+                    <span class="products-section__filter-text">Тепло и комфорт</span>
+                </button>
+                
+                <button type="button" class="products-section__filter-item" data-filter="recovery-energy">
+                    <span class="products-section__filter-text">Восстановление и энергия</span>
+                </button>
+                
+                <button type="button" class="products-section__filter-item products-section__filter-item--active" data-filter="throat-breathing">
+                    <span class="products-section__filter-text">Горло и дыхание</span>
+                </button>
+                
+                <button type="button" class="products-section__filter-item" data-filter="immunity-protection">
+                    <span class="products-section__filter-text">Иммунитет и защита</span>
+                </button>
+                
+                <button type="button" class="products-section__filter-item" data-filter="for-children">
+                    <span class="products-section__filter-text">Для детей</span>
+                </button>
+                
+                <button type="button" class="products-section__filter-item" data-filter="family-support">
+                    <span class="products-section__filter-text">Поддержка для всей семьи</span>
+                </button>
+            </div>
+        </div>
+        
+        <div class="products-section__slider-wrapper">
+            <div class="swiper products-section__slider" id="productsSectionSlider">
+                <div class="swiper-wrapper">
+                    <!-- Слайд 1 -->
+                    <div class="swiper-slide">
+                        <div class="product-card">
+                            <div class="product-card__image-wrapper">
+                                <img src="/assets/images/products/product1.png" alt="Леденцы для горла с травами" class="product-card__image">
+                                <div class="product-card__image-overlay"></div>
+                                
+                                <div class="product-card__hover-info">
+                                    <div class="product-card__hover-details">
+                                        <div class="product-card__hover-detail">
+                                            <span class="product-card__hover-detail-label">Показания</span>
+                                            <span class="product-card__hover-detail-value">Помогают смягчить горло, освежить дыхание и облегчить кашель.</span>
+                                        </div>
+                                        <div class="product-card__hover-detail">
+                                            <span class="product-card__hover-detail-label">Объём / фасовка</span>
+                                            <span class="product-card__hover-detail-value">75 г (примерно 25 леденцов)</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__hover-price">123 ₽</div>
+                                </div>
+                                
+                                <div class="product-card__rating-section">
+                                    <div class="product-card__rating">
+                                        <i class="icon icon-star-filled"></i>
+                                        <i class="icon icon-star-filled"></i>
+                                        <i class="icon icon-star-filled"></i>
+                                        <i class="icon icon-star-filled"></i>
+                                        <i class="icon icon-star-empty"></i>
+                                    </div>
+                                    <a href="#" class="product-card__reviews-link">12 отзывов</a>
+                                </div>
+                                
+                                <div class="product-card__actions">
+                                    <button type="button" class="product-card__action-btn" title="Добавить в корзину">
+                                        <i class="icon icon-cart-white"></i>
+                                    </button>
+                                    <button type="button" class="product-card__action-btn" title="Добавить в избранное">
+                                        <i class="icon icon-favorite-white"></i>
+                                    </button>
+                                </div>
+                                
+                                <div class="product-card__badge">
+                                    <div class="product-card__badge-label">1+1 акция</div>
+                                    <div class="product-card__badge-tooltip">
+                                        <div class="product-card__badge-tooltip-content">
+                                            <div class="product-card__badge-tooltip-title">Двойная выгода</div>
+                                            <div class="product-card__badge-tooltip-description">Купи два по цене одного</div>
+                                        </div>
+                                        <div class="product-card__badge-tooltip-arrow">
+                                            <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.1126 17.8379C12.9643 18.9025 14.6082 18.8216 15.3513 17.6785L24.8338 3.08998C25.6986 1.75947 24.7438 0 23.1569 0H2.00353C0.326521 0 -0.605824 1.93986 0.441797 3.24939L12.1126 17.8379Z" fill="#151A0F"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="product-card__info">
+                                <div class="product-card__details">
+                                    <h3 class="product-card__title"><a href="/product.html">Леденцы для горла с травами</a></h3>
+                                    <p class="product-card__brand">Ryukakusan</p>
+                                </div>
+                                
+                                <div class="product-card__mobile-details">
+                                    <div class="product-card__mobile-detail">
+                                        <span class="product-card__mobile-detail-label">Показания</span>
+                                        <span class="product-card__mobile-detail-value">Помогают смягчить горло, освежить дыхание и облегчить кашель.</span>
+                                    </div>
+                                    <div class="product-card__mobile-detail">
+                                        <span class="product-card__mobile-detail-label">Объём / фасовка</span>
+                                        <span class="product-card__mobile-detail-value">75 г (примерно 25 леденцов)</span>
+                                    </div>
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Слайд 2 -->
+                    <div class="swiper-slide">
+                        <div class="product-card">
+                            <div class="product-card__image-wrapper">
+                                <img src="/assets/images/products/product2.png" alt="Леденцы для горла с травами" class="product-card__image">
+                                <div class="product-card__image-overlay"></div>
+                                
+                                <div class="product-card__hover-info">
+                                    <div class="product-card__hover-details">
+                                        <div class="product-card__hover-detail">
+                                            <span class="product-card__hover-detail-label">Показания</span>
+                                            <span class="product-card__hover-detail-value">Помогают смягчить горло, освежить дыхание и облегчить кашель.</span>
+                                        </div>
+                                        <div class="product-card__hover-detail">
+                                            <span class="product-card__hover-detail-label">Объём / фасовка</span>
+                                            <span class="product-card__hover-detail-value">75 г (примерно 25 леденцов)</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__hover-price">22 500 ₽</div>
+                                </div>
+                                
+                                <div class="product-card__rating-section">
+                                    <div class="product-card__rating">
+                                        <img src="/assets/images/icons/star-filled.svg" alt="★" width="16" height="15">
+                                        <img src="/assets/images/icons/star-filled.svg" alt="★" width="16" height="15">
+                                        <img src="/assets/images/icons/star-filled.svg" alt="★" width="16" height="15">
+                                        <img src="/assets/images/icons/star-filled.svg" alt="★" width="16" height="15">
+                                        <img src="/assets/images/icons/star-filled.svg" alt="★" width="16" height="15">
+                                    </div>
+                                    <a href="#" class="product-card__reviews-link">8 отзывов</a>
+                                </div>
+                                
+                                <div class="product-card__actions">
+                                    <button type="button" class="product-card__action-btn" title="Добавить в корзину">
+                                        <i class="icon icon-cart-white"></i>
+                                    </button>
+                                    <button type="button" class="product-card__action-btn" title="Добавить в избранное">
+                                        <i class="icon icon-favorite-white"></i>
+                                    </button>
+                                </div>
+                                
+                                <div class="product-card__badge product-card__badge--bestseller">
+                                    <div class="product-card__badge-label">Бестселлер</div>
+                                </div>
+                            </div>
+                            
+                            <div class="product-card__info">
+                                <div class="product-card__details">
+                                    <h3 class="product-card__title"><a href="/product.html">Леденцы для горла с травами</a></h3>
+                                    <p class="product-card__brand">Ryukakusan</p>
+                                </div>
+                                
+                                <div class="product-card__mobile-details">
+                                    <div class="product-card__mobile-detail">
+                                        <span class="product-card__mobile-detail-label">Показания</span>
+                                        <span class="product-card__mobile-detail-value">Помогают смягчить горло, освежить дыхание и облегчить кашель.</span>
+                                    </div>
+                                    <div class="product-card__mobile-detail">
+                                        <span class="product-card__mobile-detail-label">Объём / фасовка</span>
+                                        <span class="product-card__mobile-detail-value">75 г (примерно 25 леденцов)</span>
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Слайд 3 -->
+                    <div class="swiper-slide">
+                        <div class="product-card">
+                            <div class="product-card__image-wrapper">
+                                <img src="/assets/images/products/product3.png" alt="Леденцы для горла с травами" class="product-card__image">
+                                <div class="product-card__image-overlay"></div>
+                                
+                                <div class="product-card__hover-info">
+                                    <div class="product-card__hover-details">
+                                        <div class="product-card__hover-detail">
+                                            <span class="product-card__hover-detail-label">Показания</span>
+                                            <span class="product-card__hover-detail-value">Помогают смягчить горло, освежить дыхание и облегчить кашель.</span>
+                                        </div>
+                                        <div class="product-card__hover-detail">
+                                            <span class="product-card__hover-detail-label">Объём / фасовка</span>
+                                            <span class="product-card__hover-detail-value">75 г (примерно 25 леденцов)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="product-card__rating-section">
+                                    <div class="product-card__rating">
+                                        <img src="/assets/images/icons/star-filled.svg" alt="★" width="16" height="15">
+                                        <img src="/assets/images/icons/star-filled.svg" alt="★" width="16" height="15">
+                                        <img src="/assets/images/icons/star-filled.svg" alt="★" width="16" height="15">
+                                        <img src="/assets/images/icons/star-empty.svg" alt="☆" width="16" height="15">
+                                        <img src="/assets/images/icons/star-empty.svg" alt="☆" width="16" height="15">
+                                    </div>
+                                    <a href="#" class="product-card__reviews-link">5 отзывов</a>
+                                </div>
+                                
+                                <div class="product-card__actions">
+                                    <button type="button" class="product-card__action-btn" title="Добавить в корзину">
+                                        <i class="icon icon-cart-white"></i>
+                                    </button>
+                                    <button type="button" class="product-card__action-btn" title="Добавить в избранное">
+                                        <i class="icon icon-favorite-white"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div class="product-card__info">
+                                <div class="product-card__details">
+                                    <h3 class="product-card__title"><a href="/product.html">Леденцы для горла с травами</a></h3>
+                                    <p class="product-card__brand">Ryukakusan</p>
+                                </div>
+                                
+                                <div class="product-card__mobile-details">
+                                    <div class="product-card__mobile-detail">
+                                        <span class="product-card__mobile-detail-label">Показания</span>
+                                        <span class="product-card__mobile-detail-value">Помогают смягчить горло, освежить дыхание и облегчить кашель.</span>
+                                    </div>
+                                    <div class="product-card__mobile-detail">
+                                        <span class="product-card__mobile-detail-label">Объём / фасовка</span>
+                                        <span class="product-card__mobile-detail-value">75 г (примерно 25 леденцов)</span>
+                                    </div>
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Слайд 4 -->
+                    <div class="swiper-slide">
+                        <div class="product-card">
+                            <div class="product-card__image-wrapper">
+                                <img src="/assets/images/products/product1.png" alt="Леденцы для горла с травами" class="product-card__image">
+                                <div class="product-card__image-overlay"></div>
+                                
+                                <div class="product-card__hover-info">
+                                    <div class="product-card__hover-details">
+                                        <div class="product-card__hover-detail">
+                                            <span class="product-card__hover-detail-label">Показания</span>
+                                            <span class="product-card__hover-detail-value">Помогают смягчить горло, освежить дыхание и облегчить кашель.</span>
+                                        </div>
+                                        <div class="product-card__hover-detail">
+                                            <span class="product-card__hover-detail-label">Объём / фасовка</span>
+                                            <span class="product-card__hover-detail-value">75 г (примерно 25 леденцов)</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__hover-price">35 000 ₽</div>
+                                </div>
+                                
+                                <div class="product-card__rating-section">
+                                    <div class="product-card__rating">
+                                        <img src="/assets/images/icons/star-filled.svg" alt="★" width="16" height="15">
+                                        <img src="/assets/images/icons/star-filled.svg" alt="★" width="16" height="15">
+                                        <img src="/assets/images/icons/star-filled.svg" alt="★" width="16" height="15">
+                                        <img src="/assets/images/icons/star-filled.svg" alt="★" width="16" height="15">
+                                        <img src="/assets/images/icons/star-filled.svg" alt="★" width="16" height="15">
+                                    </div>
+                                    <a href="#" class="product-card__reviews-link">25 отзывов</a>
+                                </div>
+                                
+                                <div class="product-card__actions">
+                                    <button type="button" class="product-card__action-btn" title="Добавить в корзину">
+                                        <i class="icon icon-cart-white"></i>
+                                    </button>
+                                    <button type="button" class="product-card__action-btn" title="Добавить в избранное">
+                                        <i class="icon icon-favorite-white"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div class="product-card__info">
+                                <div class="product-card__details">
+                                    <h3 class="product-card__title"><a href="/product.html">Леденцы для горла с травами</a></h3>
+                                    <p class="product-card__brand">Ryukakusan</p>
+                                </div>
+
+                                <div class="product-card__mobile-details">
+                                    <div class="product-card__mobile-detail">
+                                        <span class="product-card__mobile-detail-label">Показания</span>
+                                        <span class="product-card__mobile-detail-value">Помогают смягчить горло, освежить дыхание и облегчить кашель.</span>
+                                    </div>
+                                    <div class="product-card__mobile-detail">
+                                        <span class="product-card__mobile-detail-label">Объём / фасовка</span>
+                                        <span class="product-card__mobile-detail-value">75 г (примерно 25 леденцов)</span>
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Слайд 5 -->
+                    <div class="swiper-slide">
+                        <div class="product-card">
+                            <div class="product-card__image-wrapper">
+                                <img src="/assets/images/products/product2.png" alt="Леденцы для горла с травами" class="product-card__image">
+                                <div class="product-card__image-overlay"></div>
+                                
+                                <div class="product-card__hover-info">
+                                    <div class="product-card__hover-details">
+                                        <div class="product-card__hover-detail">
+                                            <span class="product-card__hover-detail-label">Показания</span>
+                                            <span class="product-card__hover-detail-value">Помогают смягчить горло, освежить дыхание и облегчить кашель.</span>
+                                        </div>
+                                        <div class="product-card__hover-detail">
+                                            <span class="product-card__hover-detail-label">Объём / фасовка</span>
+                                            <span class="product-card__hover-detail-value">75 г (примерно 25 леденцов)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="product-card__rating-section">
+                                    <div class="product-card__rating">
+                                        <i class="icon icon-star-filled"></i>
+                                        <i class="icon icon-star-filled"></i>
+                                        <i class="icon icon-star-filled"></i>
+                                        <i class="icon icon-star-filled"></i>
+                                        <i class="icon icon-star-empty"></i>
+                                    </div>
+                                    <a href="#" class="product-card__reviews-link">15 отзывов</a>
+                                </div>
+                                
+                                <div class="product-card__actions">
+                                    <button type="button" class="product-card__action-btn" title="Добавить в корзину">
+                                        <i class="icon icon-cart-white"></i>
+                                    </button>
+                                    <button type="button" class="product-card__action-btn" title="Добавить в избранное">
+                                        <i class="icon icon-favorite-white"></i>
+                                    </button>
+                                </div>
+                                
+                                <div class="product-card__badge">
+                                    <div class="product-card__badge-label">1+1 акция</div>
+                                    <div class="product-card__badge-tooltip">
+                                        <div class="product-card__badge-tooltip-content">
+                                            <div class="product-card__badge-tooltip-title">Двойная выгода</div>
+                                            <div class="product-card__badge-tooltip-description">Купи два по цене одного</div>
+                                        </div>
+                                        <div class="product-card__badge-tooltip-arrow">
+                                            <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.1126 17.8379C12.9643 18.9025 14.6082 18.8216 15.3513 17.6785L24.8338 3.08998C25.6986 1.75947 24.7438 0 23.1569 0H2.00353C0.326521 0 -0.605824 1.93986 0.441797 3.24939L12.1126 17.8379Z" fill="#151A0F"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="product-card__info">
+                                <div class="product-card__details">
+                                    <h3 class="product-card__title"><a href="/product.html">Леденцы для горла с травами</a></h3>
+                                    <p class="product-card__brand">Ryukakusan</p>
+                                </div>
+                                
+                                <div class="product-card__mobile-details">
+                                    <div class="product-card__mobile-detail">
+                                        <span class="product-card__mobile-detail-label">Показания</span>
+                                        <span class="product-card__mobile-detail-value">Помогают смягчить горло, освежить дыхание и облегчить кашель.</span>
+                                    </div>
+                                    <div class="product-card__mobile-detail">
+                                        <span class="product-card__mobile-detail-label">Объём / фасовка</span>
+                                        <span class="product-card__mobile-detail-value">75 г (примерно 25 леденцов)</span>
+                                    </div>
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+</div>
+
+
+    </main>
+    <footer class="footer">
+    <div class="footer__container">
+        <div class="footer__top">
+            <div class="footer__logo">
+                <img src="/assets/images/icons/logo-footer.svg" alt="Dr.Sugi" width="200" height="32">
+            </div>
+        </div>
+        
+        <div class="footer__content">
+            <div class="footer__column">
+                <h3 class="footer__column-title">О Нас</h3>
+                <nav class="footer__nav">
+                    <a href="#" class="footer__link">О компании</a>
+                    <a href="#" class="footer__link">Доставка и оплата</a>
+                    <a href="#" class="footer__link">Гарантия и возврат</a>
+                    <a href="#" class="footer__link">Контакты</a>
+                </nav>
+                <div class="footer__social footer__social--desktop">
+                    <a href="#" class="footer__social-link" title="Facebook">
+                        <i class="icon icon-social-facebook"></i>
+                    </a>
+                    <a href="#" class="footer__social-link" title="Telegram">
+                        <i class="icon icon-social-telegram"></i>
+                    </a>
+                    <a href="#" class="footer__social-link" title="Instagram">
+                        <i class="icon icon-social-instagram"></i>
+                    </a>
+                    <a href="#" class="footer__social-link" title="YouTube">
+                        <i class="icon icon-social-youtube"></i>
+                    </a>
+                    <a href="#" class="footer__social-link" title="VK">
+                        <i class="icon icon-social-vk"></i>
+                    </a>
+                    <a href="#" class="footer__social-link" title="Discord">
+                        <i class="icon icon-social-discord"></i>
+                    </a>
+                    <a href="#" class="footer__social-link" title="RuTube">
+                        <i class="icon icon-social-rutube"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer__column">
+                <h3 class="footer__column-title">Клиентам</h3>
+                <nav class="footer__nav">
+                    <a href="/account.html" class="footer__link">Мой профиль</a>
+                    <a href="#" class="footer__link">История заказов</a>
+                    <a href="/cart2.html" class="footer__link">Корзина</a>
+                    <a href="/favorites.html" class="footer__link">Избранное</a>
+                </nav>
+            </div>
+            
+            <div class="footer__column">
+                <h3 class="footer__column-title">Юридическая информация</h3>
+                <nav class="footer__nav">
+                    <a href="#" class="footer__link">Политика конфиденциальности</a>
+                    <a href="#" class="footer__link">Публичная оферта</a>
+                    <a href="#" class="footer__link">
+                        Согласие на обработку персональных данных
+                    </a>
+                    <a href="#" class="footer__link">Документы</a>
+                </nav>
+            </div>
+        </div>
+        
+        <div class="footer__social footer__social--mobile">
+            <a href="#" class="footer__social-link" title="Facebook">
+                <i class="icon icon-social-facebook"></i>
+            </a>
+            <a href="#" class="footer__social-link" title="Telegram">
+                <i class="icon icon-social-telegram"></i>
+            </a>
+            <a href="#" class="footer__social-link" title="Instagram">
+                <i class="icon icon-social-instagram"></i>
+            </a>
+            <a href="#" class="footer__social-link" title="YouTube">
+                <i class="icon icon-social-youtube"></i>
+            </a>
+            <a href="#" class="footer__social-link" title="VK">
+                <i class="icon icon-social-vk"></i>
+            </a>
+            <a href="#" class="footer__social-link" title="Discord">
+                <i class="icon icon-social-discord"></i>
+            </a>
+            <a href="#" class="footer__social-link" title="RuTube">
+                <i class="icon icon-social-rutube"></i>
+            </a>
+        </div>
+        
+        <div class="footer__bottom">
+            <div class="footer__copyright">©DS. All rights reserved.</div>
+            <div class="footer__payments">
+                <img src="/assets/images/icons/payment-visa.svg" alt="Visa" width="62" height="20" class="footer__payment-icon">
+                <img src="/assets/images/icons/payment-mastercard.svg" alt="Mastercard" width="28" height="20" class="footer__payment-icon">
+                <img src="/assets/images/icons/payment-mir.svg" alt="МИР" width="32" height="20" class="footer__payment-icon">
+                <img src="/assets/images/icons/payment-sber.svg" alt="Сбер" width="64" height="21" class="footer__payment-icon">
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- Модальное окно для формы -->
+<div id="modalForm" class="modal">
+    <div class="modal__overlay">
+        <div class="modal__content">
+            <button class="modal__close" type="button" aria-label="Закрыть модальное окно">
+                <span></span>
+                <span></span>
+            </button>
+            
+            <div class="modal__header">
+                <h2 class="modal__title">Оставить заявку</h2>
+                <p class="modal__subtitle">Заполните форму и мы свяжемся с вами в ближайшее время</p>
+            </div>
+            
+            <form class="modal__form" id="contactForm">
+                <div class="form__group">
+                    <label for="modalName" class="form__label">Имя *</label>
+                    <input 
+                        type="text" 
+                        id="modalName" 
+                        name="name" 
+                        class="form__input" 
+                        placeholder="Введите ваше имя"
+                        required
+                    >
+                </div>
+                
+                <div class="form__group">
+                    <label for="modalPhone" class="form__label">Телефон *</label>
+                    <input 
+                        type="tel" 
+                        id="modalPhone" 
+                        name="phone" 
+                        class="form__input phone-input" 
+                        placeholder="+7 (___) ___-__-__"
+                        required
+                    >
+                </div>
+                
+                <div class="form__group">
+                    <label for="modalEmail" class="form__label">Email</label>
+                    <input 
+                        type="email" 
+                        id="modalEmail" 
+                        name="email" 
+                        class="form__input" 
+                        placeholder="Введите ваш email"
+                    >
+                </div>
+                
+                <div class="form__group">
+                    <label for="modalMessage" class="form__label">Сообщение</label>
+                    <textarea 
+                        id="modalMessage" 
+                        name="message" 
+                        class="form__textarea" 
+                        placeholder="Расскажите о вашем проекте"
+                        rows="4"
+                    ></textarea>
+                </div>
+                
+                <div class="form__group form__group--checkbox">
+                    <label class="form__checkbox">
+                        <input type="checkbox" name="agreement" required>
+                        <span class="form__checkbox-text">
+                            Я согласен с <a href="#" class="form__link">политикой конфиденциальности</a>
+                        </span>
+                    </label>
+                </div>
+                
+                <button type="submit" class="form__submit">
+                    Отправить заявку
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+    <!-- Модальное окно благодарности -->
+<div id="modalThankYou" class="modal">
+    <div class="modal__overlay">
+        <div class="modal__content modal__content--centered">
+            <button class="modal__close" type="button" aria-label="Закрыть модальное окно">
+                <span></span>
+                <span></span>
+            </button>
+            
+            <div class="modal__success">
+                <div class="modal__success-icon">
+                    <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="32" cy="32" r="32" fill="#4CAF50"/>
+                        <path d="M20 32L28 40L44 24" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                
+                <h2 class="modal__title">Спасибо за заявку!</h2>
+                <p class="modal__subtitle">
+                    Ваша заявка успешно отправлена. Мы свяжемся с вами в ближайшее время.
+                </p>
+                
+                <button type="button" class="modal__close-btn" onclick="document.getElementById('modalThankYou').querySelector('.modal__close').click()">
+                    Закрыть
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Модальное окно для смены электронной почты -->
+<div id="modalChangeEmail" class="modal modal--change-email">
+    <div class="modal__overlay">
+        <div class="modal__content modal__content--change-email">
+            <button class="modal__close modal__close--change-email" type="button" aria-label="Закрыть модальное окно">
+                <i class="icon icon-close"></i>
+            </button>
+            
+            <div class="modal-change-email">
+                <div class="modal-change-email__header">
+                    <h2 class="modal-change-email__title">Смена адреса электронной почты</h2>
+                    <div class="modal-change-email__current-label">Текущий адрес электронной почты:</div>
+                    <div class="modal-change-email__current-email">alenaadelt@gmail.com</div>
+                </div>
+
+                <div class="modal-change-email__form">
+                    <div class="modal-change-email__label">Введите новый адрес электронной почты:</div>
+                    <div class="modal-change-email__input-wrapper">
+                        <input 
+                            type="email" 
+                            id="newEmail" 
+                            name="newEmail" 
+                            class="modal-change-email__input" 
+                            placeholder="alenaadelt@gmail.com"
+                        >
+                    </div>
+                </div>
+
+                <button type="button" class="modal-change-email__submit btn btn--dark">
+                    Отправить код подтверждения
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Модальное окно для ввода кода подтверждения email -->
+<div id="modalEmailCode" class="modal modal--change-email">
+    <div class="modal__overlay">
+        <div class="modal__content modal__content--change-email modal__content--change-email-code">
+            <button class="modal__close modal__close--change-email" type="button" aria-label="Закрыть модальное окно">
+                <i class="icon icon-close"></i>
+            </button>
+            
+            <div class="modal-change-email">
+                <div class="modal-change-email__header">
+                    <h2 class="modal-change-email__title">Смена адреса электронной почты</h2>
+                    <div class="modal-change-email__message">Мы отправили вам код подтверждения на новый адрес</div>
+                </div>
+
+                <div class="modal-change-email__form">
+                    <div class="modal-change-email__label">Введите код</div>
+                    <div class="modal-change-email__input-wrapper">
+                        <input 
+                            type="text" 
+                            id="emailCode" 
+                            name="emailCode" 
+                            class="modal-change-email__input modal-change-email__input--code" 
+                            placeholder=""
+                            maxlength="6"
+                        >
+                    </div>
+                </div>
+
+                <div class="modal-change-email__actions">
+                    <button type="button" class="modal-change-email__resend">
+                        Отправить еще раз
+                    </button>
+                    <button type="button" class="modal-change-email__confirm">
+                        Подтвердить
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Модальное окно авторизации/регистрации -->
+<div id="modalAuth" class="modal">
+    <div class="modal__overlay">
+        <div class="modal__content modal__content--change-email">
+            <button class="modal__close modal__close--change-email" type="button" aria-label="Закрыть модальное окно" data-svg-wrapper>
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.9287 27.0717L27.072 12.9283M27.072 27.0717L12.9287 12.9283" stroke="#3C4534" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            
+            <div class="modal-auth">
+                <!-- Переключатель вкладок -->
+                <div class="modal-auth__tabs">
+                    <div class="modal-auth__tabs-wrapper">
+                        <button type="button" class="modal-auth__tab modal-auth__tab--active" data-tab="login">
+                            Авторизация
+                        </button>
+                        <button type="button" class="modal-auth__tab" data-tab="register">
+                            Регистрация
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Форма авторизации -->
+                <form class="modal-auth__form" id="authForm" data-form-type="login">
+                    <div class="modal-auth__field">
+                        <label class="modal-auth__label modal-auth__label--login">Введите имя пользователя или адрес электронной почты</label>
+                        <label class="modal-auth__label modal-auth__label--register" style="display: none;">Адрес электронной почты</label>
+                        <div class="modal-change-email__input-wrapper">
+                            <input 
+                                type="text" 
+                                id="authUsername" 
+                                name="username" 
+                                class="modal-change-email__input" 
+                                placeholder=""
+                                required
+                            >
+                        </div>
+                    </div>
+
+                    <div class="modal-auth__field">
+                        <label class="modal-auth__label">Пароль</label>
+                        <div class="modal-change-email__input-wrapper modal-change-email__input-wrapper--password">
+                            <input 
+                                type="password" 
+                                id="authPassword" 
+                                name="password" 
+                                class="modal-change-email__input" 
+                                placeholder=""
+                                required
+                            >
+                            <button type="button" class="modal-auth__password-toggle" aria-label="Показать пароль" data-svg-wrapper>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.275 15.296C2.425 14.192 2 13.639 2 12C2 10.36 2.425 9.809 3.275 8.704C4.972 6.5 7.818 4 12 4C16.182 4 19.028 6.5 20.725 8.704C21.575 9.81 22 10.361 22 12C22 13.64 21.575 14.191 20.725 15.296C19.028 17.5 16.182 20 12 20C7.818 20 4.972 17.5 3.275 15.296Z" stroke="#3C4534" stroke-width="1.5"/>
+                                    <path d="M15 12C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 15 12 15C11.2044 15 10.4413 14.6839 9.87868 14.1213C9.31607 13.5587 9 12.7956 9 12C9 11.2044 9.31607 10.4413 9.87868 9.87868C10.4413 9.31607 11.2044 9 12 9C12.7956 9 13.5587 9.31607 14.1213 9.87868C14.6839 10.4413 15 11.2044 15 12Z" stroke="#3C4534" stroke-width="1.5"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="modal-auth__options">
+                        <label class="modal-auth__checkbox">
+                            <input type="checkbox" name="remember" class="modal-auth__checkbox-input">
+                            <span class="modal-auth__checkbox-icon">
+                                <div class="modal-auth__checkbox-icon-inner">
+                                    <div data-svg-wrapper style="position: relative">
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_304_4109)">
+                                                <path d="M1.33203 7.32697L5.41759 11.3237L11.99 1.33188" stroke="white" stroke-width="2.54694" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_304_4109">
+                                                    <rect width="13.3224" height="13.3224" fill="white"/>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </span>
+                            <span class="modal-auth__checkbox-text">Запомнить меня</span>
+                        </label>
+                        <a href="#" class="modal-auth__forgot-link">Забыли пароль?</a>
+                    </div>
+
+                    <button type="submit" class="modal-auth__submit">
+                        <span class="modal-auth__submit-text--login">Авторизоваться</span>
+                        <span class="modal-auth__submit-text--register" style="display: none;">Зарегистрироваться</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <div id="loader-backdrop">
+    <span id="loader"></span>
+</div>
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.2/html2pdf.bundle.min.js"
+        integrity="sha512-MpDFIChbcXl2QgipQrt1VcPHMldRILetapBl5MPCA9Y8r7qvlwx1/Mc9hNTzY+kS5kX6PdoDq41ws1HiVNLdZA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+        defer></script>
+    <script src="https://unpkg.com/imask" defer></script>
+</body>
+</html>
+
+
+
+
+
+
